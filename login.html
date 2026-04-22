@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>日本皮革研究所 Webリニューアル — ワイヤーフレーム</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Hiragino Sans','Helvetica Neue',Arial,sans-serif;background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh}
+.card{background:#fff;padding:48px 40px;width:100%;max-width:420px;box-shadow:0 8px 40px rgba(0,0,0,.4)}
+.logo{font-size:12px;font-weight:bold;color:#666;text-align:center;margin-bottom:28px;line-height:1.6;border-bottom:1px solid #e0e0e0;padding-bottom:20px}
+.logo strong{display:block;font-size:16px;color:#222;margin-bottom:4px}
+h1{font-size:14px;font-weight:bold;text-align:center;margin-bottom:24px;color:#333}
+label{font-size:12px;display:block;margin-bottom:6px;font-weight:bold;color:#555}
+input[type=password]{width:100%;border:1px solid #ccc;padding:10px 12px;font-size:14px;outline:none;margin-bottom:16px}
+input[type=password]:focus{border-color:#333}
+button{width:100%;background:#333;color:#fff;border:none;padding:12px;font-size:14px;font-weight:bold;cursor:pointer}
+button:hover{background:#111}
+.err{color:#c00;font-size:12px;text-align:center;margin-top:12px;display:none}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">
+    <strong>一般財団法人 日本皮革研究所</strong>
+    Webリニューアル提案
+  </div>
+  <h1>ワイヤーフレーム閲覧</h1>
+  <label for="pw">パスワード</label>
+  <input type="password" id="pw" placeholder="パスワードを入力" autofocus>
+  <button onclick="check()">閲覧する</button>
+  <p class="err" id="err">パスワードが違います</p>
+</div>
+<script>
+const HASH = "b3fa4f3abe5c028be9da04a76c6dd72fa44e5e93dc6f43d0a9cdae31ef6a6cd3";
+async function sha256(s){
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,"0")).join("");
+}
+async function check(){
+  const input = document.getElementById("pw").value;
+  const hash = await sha256(input);
+  if(hash === HASH){
+    sessionStorage.setItem("wf_auth","1");
+    location.href = "index.html";
+  } else {
+    document.getElementById("err").style.display = "block";
+  }
+}
+document.getElementById("pw").addEventListener("keydown", e => { if(e.key==="Enter") check(); });
+// 既にログイン済みならリダイレクト
+if(sessionStorage.getItem("wf_auth")==="1") location.href="index.html";
+</script>
+</body>
+</html>
