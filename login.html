@@ -32,7 +32,7 @@ button:hover{background:#111}
   <p class="err" id="err">パスワードが違います</p>
 </div>
 <script>
-const HASH = "b3fa4f3abe5c028be9da04a76c6dd72fa44e5e93dc6f43d0a9cdae31ef6a6cd3";
+const HASH = "b95bba4f6cf448de9ead7eec50034af71ef4ab32d1a4ab651ae4a1221eada58a";
 async function sha256(s){
   const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
   return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,"0")).join("");
