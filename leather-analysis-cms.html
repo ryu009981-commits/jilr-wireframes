@@ -92,14 +92,14 @@
 .lensa-text-block { background: #fff; padding: 24px 28px; border-bottom: 1px solid #eee; }
 .lensa-text-block p { font-size: 13px; line-height: 1.8; color: #444; }
 
-/* ページコンテンツ / 縦型カードシャドウあり（4カラム合体） */
+/* ページコンテンツ / 縦型カードシャドウあり（3カラム） */
 .lensa-card-section { background: #f7f7f7; padding: 28px 28px 24px; border-bottom: 1px solid #eee; }
 .lensa-sec-ttl {
   font-size: 17px; font-weight: bold; color: #222; margin-bottom: 16px;
   padding-bottom: 8px; border-bottom: 2px solid #900;
 }
-.lensa-cards-4 {
-  display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-bottom: 14px;
+.lensa-cards-3 {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-bottom: 14px;
 }
 .lensa-card {
   background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.1); overflow: hidden; display: block;
@@ -214,15 +214,15 @@
   <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ④ ページコンテンツ > 縦型カードシャドウあり（4カラム合体） -->
+<!-- ④ ページコンテンツ > 縦型カードシャドウあり（3カラム） -->
 <div class="cms-block">
-  <span class="cms-label">④ ページコンテンツ &gt; 縦型カードシャドウあり（4カラム合体）（固定コンテンツ）</span>
+  <span class="cms-label">④ ページコンテンツ &gt; 縦型カードシャドウあり（3カラム）（固定コンテンツ）</span>
 
   <div class="lensa-card-section">
     <div class="lensa-sec-ttl">試験・分析メニュー</div>
 
-    <!-- 1行目（4件） -->
-    <div class="lensa-cards-4">
+    <!-- 6件 × 3列 -->
+    <div class="lensa-cards-3">
       <a class="lensa-card" href="leather-physics.html">
         <div class="lensa-card-img">サムネイル画像</div>
         <div class="lensa-card-body">
@@ -255,10 +255,6 @@
           <div class="lensa-card-btn">詳しく見る</div>
         </div>
       </a>
-    </div>
-
-    <!-- 2行目（2件） -->
-    <div class="lensa-cards-4">
       <a class="lensa-card" href="leather-bottoml.html">
         <div class="lensa-card-img">サムネイル画像</div>
         <div class="lensa-card-body">
@@ -275,10 +271,9 @@
           <div class="lensa-card-btn">詳しく見る</div>
         </div>
       </a>
-      <div></div><div></div>
     </div>
   </div>
-  <div class="cms-note blue">試験メニューの追加・変更時はこのブロックを直接編集。③のサブナビも合わせて更新する。</div>
+  <div class="cms-note blue">試験メニューの追加・変更時はこのブロックを直接編集。</div>
 </div>
 
 <!-- ⑤ ページコンテンツ > 横型カード（左画像、1:3）× 2件 -->
