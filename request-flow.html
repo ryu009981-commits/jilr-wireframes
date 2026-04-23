@@ -3,75 +3,171 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: 分析依頼の流れ ｜ 日本皮革研究所</title>
+<title>WF: 分析依頼の流れ（LENSAhub実装版）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
+<link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
-
-<div class="pg-label">WF: 分析依頼の流れ</div>
+<div class="pg-label">WF: 分析依頼の流れ（LENSAhub実装版）</div>
 <div class="wrap">
-<header class="hdr"><div class="logo">一般財団法人<br>日本皮革研究所</div><div class="hdr-right"><div class="hdr-util"><a href="#">分析依頼</a><a href="#">YouTube</a><a href="faq.html">FAQ</a><a href="foundation.html">財団概要</a><a href="#">アクセス</a><a href="contact.html">お問い合わせ</a></div><nav class="gnav"><a href="leather-analysis.html" class="">皮革品質分析</a><a href="collagen.html" class="">コラーゲン定量</a><a href="ecoleather.html" class="">エコレザー認証検査</a><a href="peptide.html" class="">ペプチドシークエンス</a><a href="request-flow.html" class="on">分析依頼の流れ</a><a href="research-report.html" class="">研究事業レポート</a><a href="foundation.html" class="">財団概要</a></nav></div></header>
-<div class="bc"><a href="index.html">HOME</a><span>›</span>分析依頼の流れ</div>
-<div class="body">
-<main class="main">
-<div class="hero">
-  <h1>分析依頼の流れ</h1>
-  <p>はじめてご依頼いただく方もご安心ください。お問い合わせから報告書お届けまでの流れをご説明します。<br>
-  各試験の詳細は個別ページをご覧ください。</p>
+
+<!-- 凡例 -->
+<div class="legend">
+  <strong>LENSAhub ブロック凡例：</strong>
+  <span class="legend-item"><span class="legend-dot orange"></span>共通パーツ（全ページ反映）</span>
+  <span class="legend-item"><span class="legend-dot blue"></span>ページ固有ブロック</span>
 </div>
-<div class="sec">
-  <span class="sec-ttl">分析依頼の手順</span>
-  <div class="flow">
-    <div class="step"><div class="n">1</div><div class="t">お問い合わせ・依頼</div><div class="d">メール・フォームまたはご来所にてご依頼ください</div></div>
-    <div class="step"><div class="n">2</div><div class="t">内容確認・見積</div><div class="d">分析内容・料金・納期を確認・ご連絡します</div></div>
-    <div class="step"><div class="n">3</div><div class="t">試料の送付</div><div class="d">所定の方法で試料をお送りください</div></div>
-    <div class="step"><div class="n">4</div><div class="t">分析実施</div><div class="d">試験・分析を実施します（納期は内容による）</div></div>
-    <div class="step"><div class="n">5</div><div class="t">報告書送付</div><div class="d">結果報告書を郵送またはFAXでお届けします</div></div>
+
+<!-- ① ヘッダー（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">① ヘッダー &gt; スタンダード（共通パーツ / サイトパーツ管理で編集）</span>
+  <div class="lensa-header">
+    <div class="lensa-logo">一般財団法人<br>日本皮革研究所</div>
+    <nav class="lensa-gnav">
+      <a href="leather-analysis-cms.html">皮革品質分析</a>
+      <a href="collagen.html">コラーゲン定量</a>
+      <a href="ecoleather.html">エコレザー認証検査</a>
+      <a href="peptide.html">ペプチドシークエンス</a>
+      <a href="request-flow.html" class="on">分析依頼の流れ</a>
+      <a href="research-report.html">研究事業レポート</a>
+      <a href="foundation.html">財団概要</a>
+    </nav>
   </div>
+  <div class="cms-note orange">全ページ共通。ナビ項目はサイトパーツ管理から一括編集。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">各ステップの詳細</span>
-  <table>
-    <tr><th>STEP</th><th>内容</th><th>備考</th></tr>
-    <tr><td>STEP 1</td><td>メール・フォームまたはご来所にてご依頼。ペプチドシークエンスはExcel依頼書を使用。</td><td>依頼書ダウンロード可</td></tr>
-    <tr><td>STEP 2</td><td>依頼内容を確認後、不明点がある場合はご連絡します。</td><td></td></tr>
-    <tr><td>STEP 3</td><td>分析の種類・量に応じた方法で試料をご送付ください。</td><td>送付方法は事前確認</td></tr>
-    <tr><td>STEP 4</td><td>分析内容・混み具合により納期は変動します。事前にご案内します。</td><td>急ぎ対応要相談</td></tr>
-    <tr><td>STEP 5</td><td>完了後、報告書を郵送。FAX希望の場合はご連絡ください。</td><td>20営業日以内目安</td></tr>
-  </table>
-</div>
-<div class="sec">
-  <span class="sec-ttl">ご依頼にあたってのご注意</span>
-  <div class="blk blk-txt" style="min-height:80px;">
-    試料の保管方法・返却の可否・分析不能の場合の対応・キャンセルポリシーなどの注意事項テキスト
+
+<!-- ② ページタイトル -->
+<div class="cms-block">
+  <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
+  <div class="lensa-page-title">
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>分析依頼の流れ</div>
+    <div class="lensa-h1">分析依頼の流れ</div>
   </div>
+  <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">よくあるご質問</span>
-  <div class="faq-item"><div class="faq-q">急ぎで分析してもらえますか？</div><div class="faq-a">緊急対応も相談可能です。まずはお問い合わせください。</div></div>
-  <div class="faq-item"><div class="faq-q">試料はどのくらい必要ですか？</div><div class="faq-a">試験の種類によって異なります。各試験ページの料金表をご確認ください。</div></div>
-  <div class="faq-item"><div class="faq-q">複数の試験をまとめて依頼できますか？</div><div class="faq-a">はい、複数の試験を同時にご依頼いただけます。</div></div>
+
+<!-- ③ パーツ > 本文のみ（リード文） -->
+<div class="cms-block">
+  <span class="cms-label">③ パーツ &gt; 本文のみ（リード文）</span>
+  <div class="lensa-text-block">
+    <p>分析依頼のご手配は、以下のSTEP1〜5の流れで承っております。初めてご依頼の方もお気軽にお問い合わせください。</p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
-<div class="cta">
-  <p>ご不明な点はお気軽にお問い合わせください</p>
-  <a class="cta-btn" href="contact.html">お問い合わせ</a>
-</div></main>
-<aside class="side">
-<div class="sb-blk"><h3>分析のご依頼・お問い合わせ</h3><div class="sb-cta-box"><p>分析依頼・見積のご相談はこちら</p><a href="contact.html">お問い合わせ</a></div></div>
-<div class="sb-blk"><h3>分析依頼の流れ</h3><div class="sb-blk-body"><a class="sb-link" href="request-flow.html">▶ 分析依頼の流れへ</a></div></div>
-<div class="sb-blk"><h3>お知らせ</h3><div class="sb-blk-body"><div class="news-item"><span class="news-date">2026.03.13</span><span class="news-ttl">第4回皮革セミナー終了のご報告</span></div><div class="news-item"><span class="news-date">2026.02.18</span><span class="news-ttl">第4回皮革セミナー開催のお知らせ</span></div></div></div>
-</aside>
+
+<!-- ④ パーツ > 本文のみ（STEP1〜5フロー） -->
+<div class="cms-block">
+  <span class="cms-label">④ パーツ &gt; 本文のみ（STEP1〜5フロー）</span>
+  <div class="lensa-text-block">
+    <div class="lensa-sec-ttl">分析依頼の流れ</div>
+    <p>
+      <strong>STEP1</strong> お問い合わせ・依頼　→
+      <strong>STEP2</strong> 内容確認・見積　→
+      <strong>STEP3</strong> 試料の送付　→
+      <strong>STEP4</strong> 分析実施　→
+      <strong>STEP5</strong> 報告書送付
+    </p>
+  </div>
+  <div class="cms-note blue">STEPテキストはリッチテキストエディタで編集。</div>
 </div>
-<footer class="ftr">
-<div class="ftr-grid">
-<div class="ftr-col"><h4>試験・分析サービス</h4><a href="leather-analysis.html">皮革品質分析</a><a href="collagen.html">コラーゲン定量</a><a href="ecoleather.html">エコレザー認証検査</a><a href="peptide.html">ペプチドシークエンス</a><a href="synthetic.html">人工素材</a></div>
-<div class="ftr-col"><h4>ご依頼について</h4><a href="request-flow.html">分析依頼の流れ</a><a href="faq.html">よくあるご質問</a><a href="contact.html">お問い合わせ</a></div>
-<div class="ftr-col"><h4>研究活動</h4><a href="research-report.html">研究事業レポート</a><a href="donation.html">寄付・協力</a><a href="quality.html">品質管理</a></div>
-<div class="ftr-col"><h4>財団について</h4><a href="foundation.html">財団概要</a><a href="foundation-business.html">事業内容</a><a href="foundation-org.html">組織概要</a><a href="foundation-access.html">アクセス</a></div>
+
+<!-- ⑤ パーツ > テーブル（各STEPの詳細） -->
+<div class="cms-block">
+  <span class="cms-label">⑤ パーツ &gt; テーブル（各STEPの詳細 3列: STEP / 内容 / 備考）</span>
+  <div class="lensa-table-block">
+    <table class="lensa-table">
+      <thead>
+        <tr><th>STEP</th><th>内容</th><th>備考</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>STEP1　お問い合わせ・依頼</td><td>お問い合わせフォーム・メール・ご来所にてご依頼ください。</td><td>まずはご相談から</td></tr>
+        <tr><td>STEP2　内容確認・見積</td><td>ご依頼内容を確認し、お見積書をご提示します。</td><td>通常3営業日以内</td></tr>
+        <tr><td>STEP3　試料の送付</td><td>ご承諾後、試料をご送付ください。</td><td>送付方法はご相談</td></tr>
+        <tr><td>STEP4　分析実施</td><td>ご依頼の試験・分析を実施します。</td><td>納期はご依頼内容による</td></tr>
+        <tr><td>STEP5　報告書送付</td><td>分析結果を報告書にまとめてご送付します。</td><td>PDF/郵送対応可</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cms-note blue">テーブルはリッチテキストエディタのテーブル機能で編集。</div>
 </div>
-<div class="ftr-bottom">〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>© 一般財団法人 日本皮革研究所</div>
-</footer>
+
+<!-- ⑥ パーツ > 本文のみ（ご依頼にあたってのご注意） -->
+<div class="cms-block">
+  <span class="cms-label">⑥ パーツ &gt; 本文のみ（ご依頼にあたってのご注意）</span>
+  <div class="lensa-text-block">
+    <div class="lensa-sec-ttl">ご依頼にあたってのご注意</div>
+    <p>試料は分析に必要な量をご用意ください。試料量が不足の場合、一部の試験が実施できないことがあります。また、依頼内容によっては追加情報をお願いする場合がございます。試料は原則として返却いたしません。</p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
+
+<!-- ⑦ パーツ > 本文のみ（よくあるご質問） -->
+<div class="cms-block">
+  <span class="cms-label">⑦ パーツ &gt; 本文のみ（よくあるご質問 3件）</span>
+  <div class="lensa-text-block">
+    <div class="lensa-sec-ttl">よくあるご質問</div>
+    <p><strong>Q. 急いでいるのですが、対応可能ですか？</strong><br>
+    緊急対応も可能な場合があります。まずはお問い合わせください。</p>
+    <p><strong>Q. 試料はどのくらいの量が必要ですか？</strong><br>
+    試験の種類により異なります。詳細はお問い合わせ時にご案内します。</p>
+    <p><strong>Q. 複数の試験を同時に依頼できますか？</strong><br>
+    はい、複数試験の同時依頼が可能です。まとめてご相談ください。</p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
+</div>
+
+<!-- ⑧ パーツ > 重要なお知らせ（CTA） -->
+<div class="cms-block">
+  <span class="cms-label">⑧ パーツ &gt; 重要なお知らせ（CTA: お問い合わせ）</span>
+  <div class="lensa-notice">
+    <div class="lensa-notice-text">分析依頼・お見積のご相談はお気軽にお問い合わせください</div>
+    <a class="lensa-notice-btn red" href="contact.html">お問い合わせ</a>
+  </div>
+  <div class="cms-note blue">テキスト・ボタンラベル・リンク先は管理画面から変更可。</div>
+</div>
+
+<!-- ⑨ フッター（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">⑨ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <div class="lensa-footer">
+    <div class="lensa-footer-grid">
+      <div class="lensa-footer-col">
+        <h4>試験・分析サービス</h4>
+        <a href="leather-analysis-cms.html">皮革品質分析</a>
+        <a href="collagen.html">コラーゲン定量</a>
+        <a href="ecoleather.html">エコレザー認証検査</a>
+        <a href="peptide.html">ペプチドシークエンス</a>
+        <a href="synthetic.html">人工素材</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>ご依頼について</h4>
+        <a href="request-flow.html">分析依頼の流れ</a>
+        <a href="faq.html">よくあるご質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>研究活動</h4>
+        <a href="research-report.html">研究事業レポート</a>
+        <a href="donation.html">寄付・協力</a>
+        <a href="quality.html">品質管理</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>財団について</h4>
+        <a href="foundation.html">財団概要</a>
+        <a href="foundation-business.html">事業内容</a>
+        <a href="foundation-org.html">組織概要</a>
+        <a href="foundation-access.html">アクセス</a>
+      </div>
+    </div>
+    <div class="lensa-footer-btm">
+      〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>
+      © 一般財団法人 日本皮革研究所
+    </div>
+  </div>
+  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。</div>
+</div>
+
+</div><!-- .wrap -->
 </body>
 </html>

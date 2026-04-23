@@ -3,59 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: 関連リンク ｜ 日本皮革研究所</title>
+<title>WF: 関連リンク（LENSAhub実装版）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
+<link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
-
-<div class="pg-label">WF: 関連リンク</div>
+<div class="pg-label">WF: 関連リンク（LENSAhub実装版）</div>
 <div class="wrap">
-<header class="hdr"><div class="logo">一般財団法人<br>日本皮革研究所</div><div class="hdr-right"><div class="hdr-util"><a href="#">分析依頼</a><a href="#">YouTube</a><a href="faq.html">FAQ</a><a href="foundation.html">財団概要</a><a href="#">アクセス</a><a href="contact.html">お問い合わせ</a></div><nav class="gnav"><a href="leather-analysis.html" class="">皮革品質分析</a><a href="collagen.html" class="">コラーゲン定量</a><a href="ecoleather.html" class="">エコレザー認証検査</a><a href="peptide.html" class="">ペプチドシークエンス</a><a href="request-flow.html" class="">分析依頼の流れ</a><a href="research-report.html" class="">研究事業レポート</a><a href="foundation.html" class="on">財団概要</a></nav></div></header>
-<div class="bc"><a href="index.html">HOME</a><span>›</span>財団概要<span>›</span>関連リンク</div>
-<div class="body">
-<main class="main">
-<div class="hero hero-sm">
-  <h1>関連リンク</h1>
+
+<!-- 凡例 -->
+<div class="legend">
+  <strong>LENSAhub ブロック凡例：</strong>
+  <span class="legend-item"><span class="legend-dot orange"></span>共通パーツ（全ページ反映）</span>
+  <span class="legend-item"><span class="legend-dot blue"></span>ページ固有ブロック</span>
 </div>
-<div class="sec">
-  <span class="sec-ttl">行政機関</span>
-  <div class="link-item"><a href="#">内閣府（cao.go.jp）</a></div>
-  <div class="link-item"><a href="#">経済産業省（meti.go.jp）</a></div>
+
+<!-- ① ヘッダー（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">① ヘッダー &gt; スタンダード（共通パーツ / サイトパーツ管理で編集）</span>
+  <div class="lensa-header">
+    <div class="lensa-logo">一般財団法人<br>日本皮革研究所</div>
+    <nav class="lensa-gnav">
+      <a href="leather-analysis-cms.html">皮革品質分析</a>
+      <a href="collagen.html">コラーゲン定量</a>
+      <a href="ecoleather.html">エコレザー認証検査</a>
+      <a href="peptide.html">ペプチドシークエンス</a>
+      <a href="request-flow.html">分析依頼の流れ</a>
+      <a href="research-report.html">研究事業レポート</a>
+      <a href="foundation.html" class="on">財団概要</a>
+    </nav>
+  </div>
+  <div class="cms-note orange">全ページ共通。ナビ項目はサイトパーツ管理から一括編集。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">研究・技術機関</span>
-  <div class="link-item"><a href="#">NPO法人日本先進技術皮革協会</a></div>
-  <div class="link-item"><a href="#">栃木県皮革研究センター</a></div>
-  <div class="link-item"><a href="#">東京都立産業技術研究センター</a></div>
-  <div class="link-item"><a href="#">兵庫県立工業技術センター</a></div>
-  <div class="link-item"><a href="#">大阪産業技術研究所</a></div>
-  <div class="link-item"><a href="#">奈良県産業振興総合センター</a></div>
-  <div class="link-item"><a href="#">和歌山県工業技術センター</a></div>
+
+<!-- ② ページタイトル -->
+<div class="cms-block">
+  <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
+  <div class="lensa-page-title">
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span><a href="foundation.html">財団概要</a><span>›</span>関連リンク</div>
+    <div class="lensa-h1">関連リンク</div>
+  </div>
+  <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">業界団体</span>
-  <div class="link-item"><a href="#">日本皮革産業連合会</a></div>
+
+<!-- ③ パーツ > 本文のみ（関連機関リスト） -->
+<div class="cms-block">
+  <span class="cms-label">③ パーツ &gt; 本文のみ（関連機関リスト）</span>
+  <div class="lensa-text-block">
+    <div class="lensa-sec-ttl">関連機関</div>
+    <p>
+      <a href="#">一般社団法人 日本皮革産業連合会</a><br>
+      <a href="#">全国靴工業連合会</a><br>
+      <a href="#">一般財団法人 日本皮革技術協会</a><br>
+      <a href="#">公益財団法人 日本適合性認定協会（JAB）</a><br>
+      <a href="#">経済産業省（製造産業局 生活製品課）</a>
+    </p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。リンク先URLは管理画面から変更可。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">関連企業</span>
-  <div class="link-item"><a href="#">株式会社ニッピ</a></div>
-  <div class="link-item"><a href="#">ニッピ藤田</a></div>
-</div></main>
-<aside class="side">
-<div class="sb-blk"><h3>財団概要メニュー</h3><div class="sb-blk-body"><a class="sb-link" href="foundation.html">財団概要トップ</a><a class="sb-link" href="foundation-business.html">事業内容</a><a class="sb-link" href="foundation-org.html">組織概要</a><a class="sb-link" href="foundation-report.html">事業報告</a><a class="sb-link" href="foundation-access.html">アクセス</a><a class="sb-link" href="foundation-links.html">関連リンク</a><a class="sb-link" href="foundation-sustainability.html">サスティナビリティ</a></div></div>
-<div class="sb-blk"><h3>お問い合わせ</h3><div class="sb-cta-box"><p>各種ご相談はこちら</p><a href="contact.html">お問い合わせフォーム</a></div></div>
-</aside>
+
+<!-- ④ フッター（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">④ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <div class="lensa-footer">
+    <div class="lensa-footer-grid">
+      <div class="lensa-footer-col">
+        <h4>試験・分析サービス</h4>
+        <a href="leather-analysis-cms.html">皮革品質分析</a>
+        <a href="collagen.html">コラーゲン定量</a>
+        <a href="ecoleather.html">エコレザー認証検査</a>
+        <a href="peptide.html">ペプチドシークエンス</a>
+        <a href="synthetic.html">人工素材</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>ご依頼について</h4>
+        <a href="request-flow.html">分析依頼の流れ</a>
+        <a href="faq.html">よくあるご質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>研究活動</h4>
+        <a href="research-report.html">研究事業レポート</a>
+        <a href="donation.html">寄付・協力</a>
+        <a href="quality.html">品質管理</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>財団について</h4>
+        <a href="foundation.html">財団概要</a>
+        <a href="foundation-business.html">事業内容</a>
+        <a href="foundation-org.html">組織概要</a>
+        <a href="foundation-access.html">アクセス</a>
+      </div>
+    </div>
+    <div class="lensa-footer-btm">
+      〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>
+      © 一般財団法人 日本皮革研究所
+    </div>
+  </div>
+  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。</div>
 </div>
-<footer class="ftr">
-<div class="ftr-grid">
-<div class="ftr-col"><h4>試験・分析サービス</h4><a href="leather-analysis.html">皮革品質分析</a><a href="collagen.html">コラーゲン定量</a><a href="ecoleather.html">エコレザー認証検査</a><a href="peptide.html">ペプチドシークエンス</a><a href="synthetic.html">人工素材</a></div>
-<div class="ftr-col"><h4>ご依頼について</h4><a href="request-flow.html">分析依頼の流れ</a><a href="faq.html">よくあるご質問</a><a href="contact.html">お問い合わせ</a></div>
-<div class="ftr-col"><h4>研究活動</h4><a href="research-report.html">研究事業レポート</a><a href="donation.html">寄付・協力</a><a href="quality.html">品質管理</a></div>
-<div class="ftr-col"><h4>財団について</h4><a href="foundation.html">財団概要</a><a href="foundation-business.html">事業内容</a><a href="foundation-org.html">組織概要</a><a href="foundation-access.html">アクセス</a></div>
-</div>
-<div class="ftr-bottom">〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>© 一般財団法人 日本皮革研究所</div>
-</footer>
-</div>
+
+</div><!-- .wrap -->
 </body>
 </html>

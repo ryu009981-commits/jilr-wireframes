@@ -1,0 +1,246 @@
+/* ============================================================
+   lensa.css  —  LENSAhub ブロックアノテーション共通スタイル
+   wireframe.css と合わせて使用する
+   ============================================================ */
+
+/* === CMS Block Annotations === */
+.cms-block {
+  position: relative;
+  margin-bottom: 0;
+  border: 2px dashed #4a90d9;
+  padding-top: 26px;
+}
+.cms-block.shared { border-color: #d97c00; }
+
+.cms-label {
+  position: absolute;
+  top: 0; left: 0;
+  font-size: 10px; font-weight: bold;
+  padding: 2px 10px; color: #fff;
+  background: #4a90d9;
+  white-space: nowrap; line-height: 1.8; z-index: 10;
+}
+.cms-label.shared { background: #d97c00; }
+
+.cms-note {
+  font-size: 10px; padding: 4px 12px; margin: 0;
+}
+.cms-note.blue   { background: #e8f2ff; border-left: 3px solid #4a90d9; color: #1a5a9a; }
+.cms-note.orange { background: #fff4e8; border-left: 3px solid #d97c00; color: #7a4400; }
+
+/* 凡例 */
+.legend {
+  display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
+  padding: 8px 16px; background: #f0f0f0; border-bottom: 2px solid #ddd;
+  font-size: 10px; position: sticky; top: 0; z-index: 100;
+}
+.legend-item { display: flex; align-items: center; gap: 4px; }
+.legend-dot { width: 14px; height: 7px; border: 2px dashed; display: inline-block; }
+.legend-dot.blue   { border-color: #4a90d9; }
+.legend-dot.orange { border-color: #d97c00; }
+
+/* ============================================================
+   LENSAhub 各ブロック外観
+   ============================================================ */
+
+/* ヘッダー > スタンダード */
+.lensa-header {
+  background: #fff; border-bottom: 2px solid #222;
+  padding: 0 28px; display: flex; align-items: center; height: 68px;
+}
+.lensa-logo {
+  font-size: 12px; font-weight: bold; line-height: 1.4; color: #333;
+  border-left: 4px solid #333; padding-left: 10px; white-space: nowrap;
+}
+.lensa-gnav { display: flex; gap: 0; margin-left: auto; }
+.lensa-gnav a {
+  font-size: 11px; padding: 8px 12px; color: #444;
+  border-bottom: 3px solid transparent; white-space: nowrap;
+}
+.lensa-gnav a.on { border-bottom-color: #900; color: #900; font-weight: bold; }
+
+/* パーツ > ページタイトル */
+.lensa-page-title {
+  background: #f5f5f5; padding: 18px 28px 16px; border-bottom: 1px solid #ddd;
+}
+.lensa-bc { font-size: 11px; color: #888; margin-bottom: 10px; }
+.lensa-bc span { margin: 0 4px; color: #bbb; }
+.lensa-h1 {
+  font-size: 22px; font-weight: bold; color: #222;
+  border-left: 5px solid #900; padding-left: 12px;
+}
+
+/* パーツ > 本文のみ */
+.lensa-text-block { background: #fff; padding: 24px 28px; border-bottom: 1px solid #eee; }
+.lensa-text-block p { font-size: 13px; line-height: 1.8; color: #444; }
+
+/* パーツ > テーブル */
+.lensa-table-block { background: #fff; padding: 24px 28px; border-bottom: 1px solid #eee; }
+.lensa-sec-ttl {
+  font-size: 17px; font-weight: bold; color: #222; margin-bottom: 16px;
+  padding-bottom: 8px; border-bottom: 2px solid #900;
+}
+.lensa-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.lensa-table th {
+  background: #333; color: #fff; padding: 8px 12px;
+  text-align: left; font-weight: bold; border: 1px solid #333;
+}
+.lensa-table td { padding: 7px 12px; border: 1px solid #ddd; color: #444; background: #fff; }
+.lensa-table tr:nth-child(even) td { background: #f9f9f9; }
+.lensa-table-note { font-size: 11px; color: #888; margin-top: 6px; }
+
+/* パーツ > 本文と画像 */
+.lensa-textimg-block { background: #fff; padding: 24px 28px; border-bottom: 1px solid #eee; }
+.lensa-textimg { display: flex; gap: 24px; align-items: flex-start; }
+.lensa-textimg-img {
+  width: 200px; min-width: 200px; height: 140px; background: #ddd;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; color: #aaa;
+}
+.lensa-textimg-body { flex: 1; }
+.lensa-textimg-body p { font-size: 13px; line-height: 1.8; color: #444; }
+
+/* パーツ > 重要なお知らせ（CTA） */
+.lensa-notice {
+  background: #222; padding: 24px 28px;
+  display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;
+}
+.lensa-notice-text { font-size: 13px; color: #fff; font-weight: bold; }
+.lensa-notice-btn {
+  background: #fff; color: #222; font-size: 11px; font-weight: bold;
+  padding: 9px 22px; white-space: nowrap; display: inline-block;
+}
+.lensa-notice-btn.red { background: #900; color: #fff; }
+
+/* パーツ > バナー */
+.lensa-banner-block {
+  background: #f0f4ff; border: 2px dashed #6699cc; padding: 20px 28px;
+  display: flex; align-items: center; gap: 20px; border-bottom: 1px solid #ddd;
+}
+.lensa-banner-img {
+  width: 120px; min-width: 120px; height: 80px; background: #ddd;
+  display: flex; align-items: center; justify-content: center; font-size: 10px; color: #aaa;
+}
+.lensa-banner-text { flex: 1; font-size: 13px; color: #333; }
+.lensa-banner-btn {
+  background: #333; color: #fff; font-size: 11px; padding: 8px 18px; white-space: nowrap;
+}
+
+/* パーツ > GoogleMap */
+.lensa-map-block {
+  background: #e8e8e8; height: 240px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; color: #666; border-bottom: 1px solid #ddd;
+}
+
+/* ページコンテンツ > 縦型カードシャドウあり（3カラム） */
+.lensa-card-section { background: #f7f7f7; padding: 28px 28px 24px; border-bottom: 1px solid #eee; }
+.lensa-cards-3 {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-bottom: 14px;
+}
+.lensa-card {
+  background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.1); overflow: hidden; display: block;
+}
+.lensa-card-img {
+  height: 90px; background: #ddd;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; color: #aaa;
+}
+.lensa-card-body { padding: 12px 12px 14px; }
+.lensa-card-title { font-size: 12px; font-weight: bold; color: #222; margin-bottom: 5px; }
+.lensa-card-text { font-size: 10px; color: #666; line-height: 1.6; margin-bottom: 10px; }
+.lensa-card-btn {
+  display: block; text-align: center;
+  background: #333; color: #fff; font-size: 10px; padding: 5px;
+}
+
+/* ページコンテンツ > 縦型カードシャドウあり（3カラム）/ 画像なし版 */
+.lensa-card-noborder {
+  background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.1);
+  padding: 16px; display: block;
+}
+.lensa-card-noborder h3 { font-size: 12px; font-weight: bold; color: #222; margin-bottom: 6px; }
+.lensa-card-noborder p { font-size: 10px; color: #666; line-height: 1.6; }
+
+/* ページコンテンツ > 横型カード（左画像 1:3） */
+.lensa-hcard-section { background: #fff; padding: 28px 28px; border-bottom: 1px solid #eee; }
+.lensa-hcard {
+  display: flex; gap: 20px; align-items: flex-start;
+  border: 1px solid #e0e0e0; padding: 18px; margin-bottom: 12px; background: #fafafa;
+}
+.lensa-hcard-img {
+  width: 140px; min-width: 140px; height: 95px; background: #ddd;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; color: #aaa;
+}
+.lensa-hcard-body { flex: 1; }
+.lensa-hcard-title { font-size: 13px; font-weight: bold; color: #222; margin-bottom: 7px; }
+.lensa-hcard-text { font-size: 11px; color: #555; line-height: 1.7; margin-bottom: 10px; }
+.lensa-hcard-btn {
+  display: inline-block; background: #333; color: #fff; font-size: 10px; padding: 6px 18px;
+}
+
+/* 01（お知らせ系）ブロック */
+.lensa-news-block { background: #fff; padding: 24px 28px; border-bottom: 1px solid #eee; }
+.lensa-news-item {
+  display: flex; gap: 12px; align-items: baseline;
+  padding: 10px 0; border-bottom: 1px solid #eee; font-size: 12px;
+}
+.lensa-news-date { color: #888; white-space: nowrap; min-width: 80px; }
+.lensa-news-cat {
+  font-size: 10px; background: #333; color: #fff;
+  padding: 1px 7px; white-space: nowrap;
+}
+.lensa-news-cat.red { background: #900; }
+.lensa-news-ttl { color: #222; flex: 1; }
+.lensa-pager { display: flex; gap: 4px; justify-content: center; padding: 16px 0; }
+.lensa-pager span, .lensa-pager a {
+  padding: 6px 12px; font-size: 12px; border: 1px solid #ddd; color: #444;
+}
+.lensa-pager span.on { background: #333; color: #fff; border-color: #333; }
+
+/* お問い合わせフォームブロック */
+.lensa-form-block { background: #fff; padding: 24px 28px; border-bottom: 1px solid #eee; }
+.lensa-form-row { margin-bottom: 16px; }
+.lensa-form-label {
+  display: block; font-size: 12px; font-weight: bold; color: #444; margin-bottom: 5px;
+}
+.lensa-form-req {
+  font-size: 10px; background: #900; color: #fff;
+  padding: 1px 5px; margin-left: 5px;
+}
+.lensa-form-input {
+  width: 100%; height: 36px; background: #f0f0f0;
+  border: 1px solid #ccc; box-sizing: border-box;
+}
+.lensa-form-textarea {
+  width: 100%; height: 100px; background: #f0f0f0;
+  border: 1px solid #ccc; box-sizing: border-box;
+}
+.lensa-form-radio { display: flex; gap: 20px; flex-wrap: wrap; font-size: 12px; margin-top: 4px; }
+.lensa-form-radio label { display: flex; align-items: center; gap: 4px; color: #444; }
+.lensa-form-privacy {
+  background: #f5f5f5; border: 1px solid #ddd; padding: 12px; font-size: 11px;
+  color: #666; line-height: 1.7; height: 60px; overflow: hidden;
+}
+.lensa-form-submit {
+  display: block; width: 200px; margin: 20px auto 0;
+  background: #333; color: #fff; font-size: 14px; font-weight: bold;
+  padding: 12px; text-align: center; border: none; cursor: pointer;
+}
+.lensa-form-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* フッター */
+.lensa-footer { background: #2b2b2b; padding: 28px 28px 16px; }
+.lensa-footer-grid {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; margin-bottom: 20px;
+}
+.lensa-footer-col h4 {
+  font-size: 11px; color: #fff; font-weight: bold;
+  padding-bottom: 6px; border-bottom: 1px solid #555; margin-bottom: 8px;
+}
+.lensa-footer-col a { font-size: 10px; color: #aaa; display: block; line-height: 2.1; }
+.lensa-footer-btm {
+  border-top: 1px solid #444; padding-top: 12px;
+  font-size: 10px; color: #777; text-align: center;
+}

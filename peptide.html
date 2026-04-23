@@ -3,74 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: ペプチドシークエンス受託 ｜ 日本皮革研究所</title>
+<title>WF: ペプチドシークエンス受託（LENSAhub実装版）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
+<link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
 
-<div class="pg-label">WF: ペプチドシークエンス受託</div>
+<div class="pg-label">WF: ペプチドシークエンス受託（LENSAhub実装版）</div>
 <div class="wrap">
-<header class="hdr"><div class="logo">一般財団法人<br>日本皮革研究所</div><div class="hdr-right"><div class="hdr-util"><a href="#">分析依頼</a><a href="#">YouTube</a><a href="faq.html">FAQ</a><a href="foundation.html">財団概要</a><a href="#">アクセス</a><a href="contact.html">お問い合わせ</a></div><nav class="gnav"><a href="leather-analysis.html" class="">皮革品質分析</a><a href="collagen.html" class="">コラーゲン定量</a><a href="ecoleather.html" class="">エコレザー認証検査</a><a href="peptide.html" class="on">ペプチドシークエンス</a><a href="request-flow.html" class="">分析依頼の流れ</a><a href="research-report.html" class="">研究事業レポート</a><a href="foundation.html" class="">財団概要</a></nav></div></header>
-<div class="bc"><a href="index.html">HOME</a><span>›</span>ペプチドシークエンス受託</div>
-<div class="body">
-<main class="main">
-<div class="hero">
-  <h1>ペプチドシークエンス受託</h1>
-  <p>N末端ペプチドシークエンス分析を受託しています。Applied Biosystems Procise 492HTを使用し、タンパク質・ペプチドのアミノ酸配列を解析します。</p>
+
+<!-- 凡例 -->
+<div class="legend">
+  <strong>LENSAhub ブロック凡例：</strong>
+  <span class="legend-item"><span class="legend-dot orange"></span>共通パーツ（全ページ反映）</span>
+  <span class="legend-item"><span class="legend-dot blue"></span>ページ固有ブロック</span>
 </div>
-<div class="sec">
-  <span class="sec-ttl">サービス概要</span>
-  <div class="blk blk-txt" style="min-height:90px;">
-    N末端アミノ酸シークエンス分析の原理・用途説明テキスト（約150字）<br>
-    PVDF膜・溶液サンプルへの対応、最低試料量（10 pmol以上）など
+
+<!-- ① ヘッダー > スタンダード（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">① ヘッダー &gt; スタンダード（共通パーツ / サイトパーツ管理で編集）</span>
+  <div class="lensa-header">
+    <div class="lensa-logo">一般財団法人<br>日本皮革研究所</div>
+    <nav class="lensa-gnav">
+      <a href="leather-analysis-cms.html">皮革品質分析</a>
+      <a href="collagen.html">コラーゲン定量</a>
+      <a href="ecoleather.html">エコレザー認証検査</a>
+      <a href="peptide.html" class="on">ペプチドシークエンス</a>
+      <a href="request-flow.html">分析依頼の流れ</a>
+      <a href="research-report.html">研究事業レポート</a>
+      <a href="foundation.html">財団概要</a>
+    </nav>
   </div>
+  <div class="cms-note orange">全ページ共通。ナビ項目はサイトパーツ管理から一括編集。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">分析フロー</span>
-  <div class="flow">
-    <div class="step"><div class="n">1</div><div class="t">依頼書提出</div><div class="d">Excelフォームを記入・送付</div></div>
-    <div class="step"><div class="n">2</div><div class="t">試料送付</div><div class="d">PVDF膜または溶液で送付</div></div>
-    <div class="step"><div class="n">3</div><div class="t">前処理・測定</div><div class="d">必要に応じ脱塩処理後、装置で分析</div></div>
-    <div class="step"><div class="n">4</div><div class="t">報告書送付</div><div class="d">結果を報告書にてご報告</div></div>
+
+<!-- ② パーツ > ページタイトル -->
+<div class="cms-block">
+  <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
+  <div class="lensa-page-title">
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>ペプチドシークエンス受託</div>
+    <div class="lensa-h1">ペプチドシークエンス受託</div>
   </div>
+  <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">料金</span>
-  <table>
-    <tr><th>項目</th><th>料金（税込）</th><th>備考</th></tr>
-    <tr><td>基本分析（1〜5残基）</td><td>¥48,000</td><td>1検体</td></tr>
-    <tr><td>追加分析（6検体目〜）</td><td>¥4,500/検体</td><td></td></tr>
-    <tr><td>誘導体化による分析</td><td>¥30,000</td><td>オプション</td></tr>
-    <tr><td>ハーフ分析</td><td>¥15,000</td><td>オプション</td></tr>
-  </table>
+
+<!-- ③ パーツ > 本文のみ（リード文） -->
+<div class="cms-block">
+  <span class="cms-label">③ パーツ &gt; 本文のみ（リード文）</span>
+  <div class="lensa-text-block">
+    <p>コラーゲン由来ペプチドのアミノ酸配列解析（シークエンス）を受託します。皮革素材の同定・研究用途にご活用ください。</p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">よくあるご質問</span>
-  <div class="faq-item"><div class="faq-q">最低試料量はどのくらいですか？</div><div class="faq-a">10 pmol以上必要です。PVDF膜の場合はCBBまたはポンソーS染色を推奨します。</div></div>
-  <div class="faq-item"><div class="faq-q">N末端がブロックされている場合は分析できますか？</div><div class="faq-a">N末端ブロックされたペプチドはシークエンスできません。プロテアーゼ消化等による断片化が必要です。</div></div>
-  <div class="faq-item"><div class="faq-q">結果が得られない場合はありますか？</div><div class="faq-a">試料の状態や純度により分析できない場合があります。事前にご相談ください。</div></div>
+
+<!-- ④ パーツ > 本文のみ（サービス概要） -->
+<div class="cms-block">
+  <span class="cms-label">④ パーツ &gt; 本文のみ（サービス概要）</span>
+  <div class="lensa-text-block">
+    <p><strong>サービス概要</strong><br>
+    LC/MS/MSを用いたペプチドのアミノ酸配列解析を受託しています。コラーゲンや皮革由来タンパク質の同定・品種判別に対応しており、食品・化粧品・医療材料の研究にもご利用いただけます。Excel形式の依頼書をご使用ください。</p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
-<div class="cta">
-  <p>ペプチドシークエンス分析のご依頼はこちら</p>
-  <a class="cta-btn" href="#">依頼書ダウンロード（Excel）</a>
-  <a class="cta-btn sub" href="contact.html">お問い合わせ</a>
-</div></main>
-<aside class="side">
-<div class="sb-blk"><h3>分析のご依頼・お問い合わせ</h3><div class="sb-cta-box"><p>分析依頼・見積のご相談はこちら</p><a href="contact.html">お問い合わせ</a></div></div>
-<div class="sb-blk"><h3>分析依頼の流れ</h3><div class="sb-blk-body"><a class="sb-link" href="request-flow.html">▶ 分析依頼の流れへ</a></div></div>
-<div class="sb-blk"><h3>お知らせ</h3><div class="sb-blk-body"><div class="news-item"><span class="news-date">2026.03.13</span><span class="news-ttl">第4回皮革セミナー終了のご報告</span></div><div class="news-item"><span class="news-date">2026.02.18</span><span class="news-ttl">第4回皮革セミナー開催のお知らせ</span></div></div></div>
-</aside>
+
+<!-- ⑤ パーツ > 本文のみ（分析フロー） -->
+<div class="cms-block">
+  <span class="cms-label">⑤ パーツ &gt; 本文のみ（分析フロー）</span>
+  <div class="lensa-text-block">
+    <p><strong>分析フロー</strong></p>
+    <p>
+      STEP1 Excel依頼書の提出・お問い合わせ<br>
+      STEP2 試料の送付（所定の方法）<br>
+      STEP3 LC/MS/MSによる分析実施<br>
+      STEP4 結果報告書の送付
+    </p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
-<footer class="ftr">
-<div class="ftr-grid">
-<div class="ftr-col"><h4>試験・分析サービス</h4><a href="leather-analysis.html">皮革品質分析</a><a href="collagen.html">コラーゲン定量</a><a href="ecoleather.html">エコレザー認証検査</a><a href="peptide.html">ペプチドシークエンス</a><a href="synthetic.html">人工素材</a></div>
-<div class="ftr-col"><h4>ご依頼について</h4><a href="request-flow.html">分析依頼の流れ</a><a href="faq.html">よくあるご質問</a><a href="contact.html">お問い合わせ</a></div>
-<div class="ftr-col"><h4>研究活動</h4><a href="research-report.html">研究事業レポート</a><a href="donation.html">寄付・協力</a><a href="quality.html">品質管理</a></div>
-<div class="ftr-col"><h4>財団について</h4><a href="foundation.html">財団概要</a><a href="foundation-business.html">事業内容</a><a href="foundation-org.html">組織概要</a><a href="foundation-access.html">アクセス</a></div>
+
+<!-- ⑥ パーツ > テーブル（料金） -->
+<div class="cms-block">
+  <span class="cms-label">⑥ パーツ &gt; テーブル（料金）</span>
+  <div class="lensa-table-block">
+    <div class="lensa-sec-ttl">料金</div>
+    <table class="lensa-table">
+      <thead>
+        <tr><th>区分</th><th>料金（税込）</th><th>単位</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>基本分析（1〜5残基）</td><td>¥48,000</td><td>1検体</td></tr>
+        <tr><td>追加分析（6検体目〜）</td><td>¥4,500/検体</td><td>-</td></tr>
+        <tr><td>誘導体化による分析</td><td>¥30,000</td><td>オプション</td></tr>
+        <tr><td>ハーフ分析</td><td>¥15,000</td><td>オプション</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cms-note blue">管理画面の「テーブル」ブロックから行・列を追加。料金改訂時はここを更新。</div>
 </div>
-<div class="ftr-bottom">〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>© 一般財団法人 日本皮革研究所</div>
-</footer>
+
+<!-- ⑦ パーツ > 本文のみ（よくあるご質問） -->
+<div class="cms-block">
+  <span class="cms-label">⑦ パーツ &gt; 本文のみ（よくあるご質問）</span>
+  <div class="lensa-text-block">
+    <p><strong>よくあるご質問</strong></p>
+    <p>
+      Q: どのような試料に対応していますか？<br>
+      A: コラーゲン由来ペプチドを含む試料（皮革・食品・化粧品・医療材料等）に対応しています。<br><br>
+      Q: 依頼書はどこから入手できますか？<br>
+      A: お問い合わせいただくか、管理画面から最新版のExcel依頼書をダウンロードしてご使用ください。<br><br>
+      Q: 結果はどのような形式で報告されますか？<br>
+      A: アミノ酸配列・同定結果を記載した報告書を郵送またはメールでお届けします。
+    </p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
+
+<!-- ⑧ パーツ > 重要なお知らせ（CTA） -->
+<div class="cms-block">
+  <span class="cms-label">⑧ パーツ &gt; 重要なお知らせ（CTA）</span>
+  <div class="lensa-notice">
+    <div class="lensa-notice-text">分析依頼・お見積のご相談はお気軽にお問い合わせください</div>
+    <a class="lensa-notice-btn" href="request-flow.html">分析依頼の流れを確認する</a>
+    <a class="lensa-notice-btn red" href="contact.html">お問い合わせ</a>
+  </div>
+  <div class="cms-note blue">テキスト・ボタンラベル・リンク先は管理画面から変更可。</div>
+</div>
+
+<!-- ⑨ フッター（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">⑨ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <div class="lensa-footer">
+    <div class="lensa-footer-grid">
+      <div class="lensa-footer-col">
+        <h4>試験・分析サービス</h4>
+        <a href="leather-analysis-cms.html">皮革品質分析</a>
+        <a href="collagen.html">コラーゲン定量</a>
+        <a href="ecoleather.html">エコレザー認証検査</a>
+        <a href="peptide.html">ペプチドシークエンス</a>
+        <a href="synthetic.html">人工素材</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>ご依頼について</h4>
+        <a href="request-flow.html">分析依頼の流れ</a>
+        <a href="faq.html">よくあるご質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>研究活動</h4>
+        <a href="research-report.html">研究事業レポート</a>
+        <a href="donation.html">寄付・協力</a>
+        <a href="quality.html">品質管理</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>財団について</h4>
+        <a href="foundation.html">財団概要</a>
+        <a href="foundation-business.html">事業内容</a>
+        <a href="foundation-org.html">組織概要</a>
+        <a href="foundation-access.html">アクセス</a>
+      </div>
+    </div>
+    <div class="lensa-footer-btm">
+      〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>
+      © 一般財団法人 日本皮革研究所
+    </div>
+  </div>
+  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。</div>
+</div>
+
+</div><!-- .wrap -->
 </body>
 </html>

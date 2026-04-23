@@ -3,84 +3,199 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: エコレザー認証検査 ｜ 日本皮革研究所</title>
+<title>WF: エコレザー認証検査（LENSAhub実装版）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
+<link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
 
-<div class="pg-label">WF: エコレザー認証検査</div>
+<div class="pg-label">WF: エコレザー認証検査（LENSAhub実装版）</div>
 <div class="wrap">
-<header class="hdr"><div class="logo">一般財団法人<br>日本皮革研究所</div><div class="hdr-right"><div class="hdr-util"><a href="#">分析依頼</a><a href="#">YouTube</a><a href="faq.html">FAQ</a><a href="foundation.html">財団概要</a><a href="#">アクセス</a><a href="contact.html">お問い合わせ</a></div><nav class="gnav"><a href="leather-analysis.html" class="">皮革品質分析</a><a href="collagen.html" class="">コラーゲン定量</a><a href="ecoleather.html" class="on">エコレザー認証検査</a><a href="peptide.html" class="">ペプチドシークエンス</a><a href="request-flow.html" class="">分析依頼の流れ</a><a href="research-report.html" class="">研究事業レポート</a><a href="foundation.html" class="">財団概要</a></nav></div></header>
-<div class="bc"><a href="index.html">HOME</a><span>›</span>エコレザー認証検査</div>
-<div class="body">
-<main class="main">
-<div class="hero">
-  <h1>エコレザー認証検査</h1>
-  <p>日本皮革研究所は、日本エコレザー基準（JES）に基づくエコレザー認証検査機関です。20年以上の実績をもとに、多様なお客様のニーズに柔軟に対応しています。</p>
+
+<!-- 凡例 -->
+<div class="legend">
+  <strong>LENSAhub ブロック凡例：</strong>
+  <span class="legend-item"><span class="legend-dot orange"></span>共通パーツ（全ページ反映）</span>
+  <span class="legend-item"><span class="legend-dot blue"></span>ページ固有ブロック</span>
 </div>
-<div class="sec">
-  <span class="sec-ttl">エコレザーとは</span>
-  <div class="blk blk-txt" style="min-height:100px;">
-    2006年に制定された日本エコレザー基準（JES）の説明テキスト。<br>
-    原材料から製造・使用に至るライフサイクル全体で環境負荷を低減した皮革に付与される認証。<br>
-    ※エコレザー基準は改定済み（最新基準を記載）
+
+<!-- ① ヘッダー > スタンダード（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">① ヘッダー &gt; スタンダード（共通パーツ / サイトパーツ管理で編集）</span>
+  <div class="lensa-header">
+    <div class="lensa-logo">一般財団法人<br>日本皮革研究所</div>
+    <nav class="lensa-gnav">
+      <a href="leather-analysis-cms.html">皮革品質分析</a>
+      <a href="collagen.html">コラーゲン定量</a>
+      <a href="ecoleather.html" class="on">エコレザー認証検査</a>
+      <a href="peptide.html">ペプチドシークエンス</a>
+      <a href="request-flow.html">分析依頼の流れ</a>
+      <a href="research-report.html">研究事業レポート</a>
+      <a href="foundation.html">財団概要</a>
+    </nav>
   </div>
+  <div class="cms-note orange">全ページ共通。ナビ項目はサイトパーツ管理から一括編集。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">認証取得のメリット</span>
-  <div class="g3">
-    <div class="card"><h3>環境への取り組みをアピール</h3><p>第三者認証で製品の環境対応を客観的に証明できます</p></div>
-    <div class="card"><h3>国際的な規制への対応</h3><p>EU規制・化学物質規制への対応状況を示せます</p></div>
-    <div class="card"><h3>取引先・消費者への信頼</h3><p>認証マークで消費者・バイヤーへの信頼を高めます</p></div>
+
+<!-- ② パーツ > ページタイトル -->
+<div class="cms-block">
+  <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
+  <div class="lensa-page-title">
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>エコレザー認証検査</div>
+    <div class="lensa-h1">エコレザー認証検査</div>
   </div>
+  <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">認証検査の流れ</span>
-  <div class="flow">
-    <div class="step"><div class="n">1</div><div class="t">お問い合わせ</div><div class="d">検査内容・費用の確認</div></div>
-    <div class="step"><div class="n">2</div><div class="t">申請書類の提出</div><div class="d">申請書・試料の送付</div></div>
-    <div class="step"><div class="n">3</div><div class="t">試験実施</div><div class="d">15項目の基準試験</div></div>
-    <div class="step"><div class="n">4</div><div class="t">審査・判定</div><div class="d">基準適合の審査</div></div>
-    <div class="step"><div class="n">5</div><div class="t">認証発行</div><div class="d">認証書・マーク付与</div></div>
+
+<!-- ③ パーツ > 本文のみ（リード文） -->
+<div class="cms-block">
+  <span class="cms-label">③ パーツ &gt; 本文のみ（リード文）</span>
+  <div class="lensa-text-block">
+    <p>エコレザー（JES認定皮革）の認証取得に必要な検査を行います。環境・安全性基準をクリアした皮革製品の認証を支援します。</p>
   </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">検査費用</span>
-  <table>
-    <tr><th>認証種別</th><th>内容</th><th>料金（税込）</th></tr>
-    <tr><td>全粒面革</td><td>JES全粒面革基準適合検査</td><td>¥16,500〜¥132,000</td></tr>
-    <tr><td>銀付き革</td><td>JES銀付き革基準適合検査</td><td>¥16,500〜¥132,000</td></tr>
-    <tr><td>ビジネス向け</td><td>複数ロット・大量申請対応</td><td>お問い合わせ</td></tr>
-  </table>
-  <p style="font-size:11px;color:#666;margin-top:6px;">※料金はサンプル数・試験内容により異なります。詳細はお問い合わせください。</p>
-</div>
-<div class="sec">
-  <span class="sec-ttl">JES認定15基準（主要項目）</span>
-  <div class="blk blk-txt" style="min-height:80px;">
-    原材料・仕入先管理・製造管理・化学物質制限（PFAS・特定染料等）・色堅牢度など<br>5分類15項目の基準内容テキスト
+
+<!-- ④ パーツ > 本文のみ（エコレザーとは） -->
+<div class="cms-block">
+  <span class="cms-label">④ パーツ &gt; 本文のみ（エコレザーとは）</span>
+  <div class="lensa-text-block">
+    <p><strong>エコレザーとは</strong><br>
+    エコレザーとは、一般財団法人日本皮革産業連合会が定めたJES（Japan Eco Standard）基準に適合した皮革のことです。有害物質の規制・環境負荷低減・品質基準を満たした皮革に付与される認定マークで、国内外での取引において環境対応の証明として活用されています。</p>
   </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
-<div class="cta">
-  <p>エコレザー認証検査のご相談・申請書DLはこちら</p>
-  <a class="cta-btn" href="contact.html">お問い合わせ</a>
-  <a class="cta-btn sub" href="#">申請書ダウンロード（Excel）</a>
-</div></main>
-<aside class="side">
-<div class="sb-blk"><h3>分析のご依頼・お問い合わせ</h3><div class="sb-cta-box"><p>分析依頼・見積のご相談はこちら</p><a href="contact.html">お問い合わせ</a></div></div>
-<div class="sb-blk"><h3>分析依頼の流れ</h3><div class="sb-blk-body"><a class="sb-link" href="request-flow.html">▶ 分析依頼の流れへ</a></div></div>
-<div class="sb-blk"><h3>お知らせ</h3><div class="sb-blk-body"><div class="news-item"><span class="news-date">2026.03.13</span><span class="news-ttl">第4回皮革セミナー終了のご報告</span></div><div class="news-item"><span class="news-date">2026.02.18</span><span class="news-ttl">第4回皮革セミナー開催のお知らせ</span></div></div></div>
-</aside>
+
+<!-- ⑤ ページコンテンツ > 縦型カードシャドウあり（3カラム）「認証取得のメリット」 -->
+<div class="cms-block">
+  <span class="cms-label">⑤ ページコンテンツ &gt; 縦型カードシャドウあり（3カラム）「認証取得のメリット」</span>
+  <div class="lensa-card-section">
+    <div class="lensa-sec-ttl">認証取得のメリット</div>
+    <div class="lensa-cards-3">
+      <div class="lensa-card">
+        <div class="lensa-card-img">サムネイル画像</div>
+        <div class="lensa-card-body">
+          <div class="lensa-card-title">環境への取り組みをアピール</div>
+          <div class="lensa-card-text">エコレザー認証を取得することで、環境への配慮を対外的に示すことができます。</div>
+        </div>
+      </div>
+      <div class="lensa-card">
+        <div class="lensa-card-img">サムネイル画像</div>
+        <div class="lensa-card-body">
+          <div class="lensa-card-title">国際的な規制への対応</div>
+          <div class="lensa-card-text">有害物質規制など国際基準に対応した皮革であることを証明できます。</div>
+        </div>
+      </div>
+      <div class="lensa-card">
+        <div class="lensa-card-img">サムネイル画像</div>
+        <div class="lensa-card-body">
+          <div class="lensa-card-title">取引先・消費者への信頼</div>
+          <div class="lensa-card-text">認証マークが品質と安全性の証となり、取引先・消費者からの信頼向上につながります。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cms-note blue">タイトル・本文・リンクを管理画面から編集。画像はメディアライブラリからアップロード。</div>
 </div>
-<footer class="ftr">
-<div class="ftr-grid">
-<div class="ftr-col"><h4>試験・分析サービス</h4><a href="leather-analysis.html">皮革品質分析</a><a href="collagen.html">コラーゲン定量</a><a href="ecoleather.html">エコレザー認証検査</a><a href="peptide.html">ペプチドシークエンス</a><a href="synthetic.html">人工素材</a></div>
-<div class="ftr-col"><h4>ご依頼について</h4><a href="request-flow.html">分析依頼の流れ</a><a href="faq.html">よくあるご質問</a><a href="contact.html">お問い合わせ</a></div>
-<div class="ftr-col"><h4>研究活動</h4><a href="research-report.html">研究事業レポート</a><a href="donation.html">寄付・協力</a><a href="quality.html">品質管理</a></div>
-<div class="ftr-col"><h4>財団について</h4><a href="foundation.html">財団概要</a><a href="foundation-business.html">事業内容</a><a href="foundation-org.html">組織概要</a><a href="foundation-access.html">アクセス</a></div>
+
+<!-- ⑥ パーツ > 本文のみ（認証検査の流れ） -->
+<div class="cms-block">
+  <span class="cms-label">⑥ パーツ &gt; 本文のみ（認証検査の流れ）</span>
+  <div class="lensa-text-block">
+    <p><strong>認証検査の流れ</strong></p>
+    <p>
+      STEP1 お問い合わせ・申請書類の提出<br>
+      STEP2 試料の送付<br>
+      STEP3 JES基準に基づく検査実施<br>
+      STEP4 検査結果の報告・認定手続き<br>
+      STEP5 エコレザーマーク認定
+    </p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
-<div class="ftr-bottom">〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>© 一般財団法人 日本皮革研究所</div>
-</footer>
+
+<!-- ⑦ パーツ > テーブル（検査費用） -->
+<div class="cms-block">
+  <span class="cms-label">⑦ パーツ &gt; テーブル（検査費用）</span>
+  <div class="lensa-table-block">
+    <div class="lensa-sec-ttl">検査費用</div>
+    <table class="lensa-table">
+      <thead>
+        <tr><th>区分</th><th>対象</th><th>料金（税込）</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>全粒面革</td><td>JES全粒面革基準適合検査</td><td>¥16,500〜¥132,000</td></tr>
+        <tr><td>銀付き革</td><td>JES銀付き革基準適合検査</td><td>¥16,500〜¥132,000</td></tr>
+        <tr><td>ビジネス向け</td><td>複数ロット・大量申請対応</td><td>お問い合わせ</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cms-note blue">管理画面の「テーブル」ブロックから行・列を追加。料金改訂時はここを更新。</div>
 </div>
+
+<!-- ⑧ パーツ > 本文のみ（JES認定15基準） -->
+<div class="cms-block">
+  <span class="cms-label">⑧ パーツ &gt; 本文のみ（JES認定15基準）</span>
+  <div class="lensa-text-block">
+    <p><strong>JES認定15基準について</strong><br>
+    エコレザー（JES認定皮革）は、六価クロム・アゾ染料・ペンタクロロフェノール・フォルムアルデヒドなど15項目の環境・安全基準に適合することが求められます。当研究所ではこれらの基準に基づく検査を実施しています。</p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
+</div>
+
+<!-- ⑨ パーツ > 重要なお知らせ（CTA） -->
+<div class="cms-block">
+  <span class="cms-label">⑨ パーツ &gt; 重要なお知らせ（CTA）</span>
+  <div class="lensa-notice">
+    <div class="lensa-notice-text">エコレザー認証検査のご依頼・ご相談はお気軽にお問い合わせください</div>
+    <a class="lensa-notice-btn" href="request-flow.html">分析依頼の流れを確認する</a>
+    <a class="lensa-notice-btn red" href="contact.html">お問い合わせ</a>
+  </div>
+  <div class="cms-note blue">テキスト・ボタンラベル・リンク先は管理画面から変更可。</div>
+</div>
+
+<!-- ⑩ フッター（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">⑩ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <div class="lensa-footer">
+    <div class="lensa-footer-grid">
+      <div class="lensa-footer-col">
+        <h4>試験・分析サービス</h4>
+        <a href="leather-analysis-cms.html">皮革品質分析</a>
+        <a href="collagen.html">コラーゲン定量</a>
+        <a href="ecoleather.html">エコレザー認証検査</a>
+        <a href="peptide.html">ペプチドシークエンス</a>
+        <a href="synthetic.html">人工素材</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>ご依頼について</h4>
+        <a href="request-flow.html">分析依頼の流れ</a>
+        <a href="faq.html">よくあるご質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>研究活動</h4>
+        <a href="research-report.html">研究事業レポート</a>
+        <a href="donation.html">寄付・協力</a>
+        <a href="quality.html">品質管理</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>財団について</h4>
+        <a href="foundation.html">財団概要</a>
+        <a href="foundation-business.html">事業内容</a>
+        <a href="foundation-org.html">組織概要</a>
+        <a href="foundation-access.html">アクセス</a>
+      </div>
+    </div>
+    <div class="lensa-footer-btm">
+      〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>
+      © 一般財団法人 日本皮革研究所
+    </div>
+  </div>
+  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。</div>
+</div>
+
+</div><!-- .wrap -->
 </body>
 </html>

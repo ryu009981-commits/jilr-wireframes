@@ -3,63 +3,145 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: よくあるご質問 ｜ 日本皮革研究所</title>
+<title>WF: よくあるご質問（LENSAhub実装版）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
+<link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
-
-<div class="pg-label">WF: よくあるご質問</div>
+<div class="pg-label">WF: よくあるご質問（LENSAhub実装版）</div>
 <div class="wrap">
-<header class="hdr"><div class="logo">一般財団法人<br>日本皮革研究所</div><div class="hdr-right"><div class="hdr-util"><a href="#">分析依頼</a><a href="#">YouTube</a><a href="faq.html">FAQ</a><a href="foundation.html">財団概要</a><a href="#">アクセス</a><a href="contact.html">お問い合わせ</a></div><nav class="gnav"><a href="leather-analysis.html" class="">皮革品質分析</a><a href="collagen.html" class="">コラーゲン定量</a><a href="ecoleather.html" class="">エコレザー認証検査</a><a href="peptide.html" class="">ペプチドシークエンス</a><a href="request-flow.html" class="">分析依頼の流れ</a><a href="research-report.html" class="">研究事業レポート</a><a href="foundation.html" class="">財団概要</a></nav></div></header>
-<div class="bc"><a href="index.html">HOME</a><span>›</span>よくあるご質問</div>
-<div class="body">
-<main class="main">
-<div class="hero hero-sm">
-  <h1>よくあるご質問（FAQ）</h1>
+
+<!-- 凡例 -->
+<div class="legend">
+  <strong>LENSAhub ブロック凡例：</strong>
+  <span class="legend-item"><span class="legend-dot orange"></span>共通パーツ（全ページ反映）</span>
+  <span class="legend-item"><span class="legend-dot blue"></span>ページ固有ブロック</span>
 </div>
-<div class="sec">
-  <span class="sec-ttl">カテゴリから探す</span>
-  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;">
-    <div style="background:#333;color:#fff;padding:5px 14px;font-size:12px;">すべて</div>
-    <div style="background:#e8e8e8;padding:5px 14px;font-size:12px;border:1px dashed #aaa;">分析依頼について</div>
-    <div style="background:#e8e8e8;padding:5px 14px;font-size:12px;border:1px dashed #aaa;">試験・分析方法</div>
-    <div style="background:#e8e8e8;padding:5px 14px;font-size:12px;border:1px dashed #aaa;">皮革製品について</div>
-    <div style="background:#e8e8e8;padding:5px 14px;font-size:12px;border:1px dashed #aaa;">料金・納期</div>
+
+<!-- ① ヘッダー（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">① ヘッダー &gt; スタンダード（共通パーツ / サイトパーツ管理で編集）</span>
+  <div class="lensa-header">
+    <div class="lensa-logo">一般財団法人<br>日本皮革研究所</div>
+    <nav class="lensa-gnav">
+      <a href="leather-analysis-cms.html">皮革品質分析</a>
+      <a href="collagen.html">コラーゲン定量</a>
+      <a href="ecoleather.html">エコレザー認証検査</a>
+      <a href="peptide.html">ペプチドシークエンス</a>
+      <a href="request-flow.html">分析依頼の流れ</a>
+      <a href="research-report.html">研究事業レポート</a>
+      <a href="foundation.html">財団概要</a>
+    </nav>
   </div>
+  <div class="cms-note orange">全ページ共通。ナビ項目はサイトパーツ管理から一括編集。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">分析依頼について</span>
-  <div class="faq-item"><div class="faq-q">試験の依頼はどのようにすればよいですか？</div><div class="faq-a">お問い合わせフォーム・メール・ご来所にてご依頼いただけます。</div></div>
-  <div class="faq-item"><div class="faq-q">どのような試験・分析に対応していますか？</div><div class="faq-a">皮革物性・色堅牢度・防水・皮革化学・コラーゲン定量・エコレザー認証検査・ペプチドシークエンスなど多岐にわたります。掲載のない分析についてもお気軽にご相談ください。</div></div>
-  <div class="faq-item"><div class="faq-q">急ぎで分析してもらえますか？</div><div class="faq-a">緊急対応も可能な場合があります。まずはお問い合わせください。</div></div>
-  <div class="faq-item"><div class="faq-q">分析方法はどのような規格に基づいていますか？</div><div class="faq-a">JIS・IUP等の国内外の規格に準じて実施しています。1試料につき10〜25項目程度の分析が可能です。</div></div>
+
+<!-- ② ページタイトル -->
+<div class="cms-block">
+  <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
+  <div class="lensa-page-title">
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>よくあるご質問</div>
+    <div class="lensa-h1">よくあるご質問</div>
+  </div>
+  <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">皮革製品について</span>
-  <div class="faq-item"><div class="faq-q">天然皮革と合成皮革の違いは何ですか？</div><div class="faq-a">合成皮革は基布全体に合成樹脂を使用し、天然皮革はコラーゲン繊維で構成されています。コラーゲン系人工皮革は天然皮革に近い構造を持ちますが、基布の点で異なります。</div></div>
-  <div class="faq-item"><div class="faq-q">皮革製品はどのように保管すればよいですか？</div><div class="faq-a">直射日光・熱・湿気を避け、通気性の良い場所で保管してください。ヒーター近くや密閉容器内はカビ発生の原因になります。</div></div>
-  <div class="faq-item"><div class="faq-q">皮革の色落ちはなぜ起こりますか？</div><div class="faq-a">酸素・NOx・二酸化硫黄などのガスや、光・汗などの環境要因により変色・色落ちが生じます。</div></div>
+
+<!-- ③ パーツ > 本文のみ（カテゴリUI） -->
+<div class="cms-block">
+  <span class="cms-label">③ パーツ &gt; 本文のみ（カテゴリUI）</span>
+  <div class="lensa-text-block">
+    <p><strong>カテゴリ</strong></p>
+    <p>
+      <strong>すべて</strong>　／　分析依頼について　／　試験・分析方法　／　皮革製品について　／　料金・納期
+    </p>
+  </div>
+  <div class="cms-note blue">カテゴリ絞り込みUI。管理画面でカテゴリ追加・変更可。</div>
 </div>
-<div class="cta">
-  <p>ご不明な点はお気軽にお問い合わせください</p>
-  <a class="cta-btn" href="contact.html">お問い合わせ</a>
-</div></main>
-<aside class="side">
-<div class="sb-blk"><h3>分析のご依頼・お問い合わせ</h3><div class="sb-cta-box"><p>分析依頼・見積のご相談はこちら</p><a href="contact.html">お問い合わせ</a></div></div>
-<div class="sb-blk"><h3>分析依頼の流れ</h3><div class="sb-blk-body"><a class="sb-link" href="request-flow.html">▶ 分析依頼の流れへ</a></div></div>
-<div class="sb-blk"><h3>お知らせ</h3><div class="sb-blk-body"><div class="news-item"><span class="news-date">2026.03.13</span><span class="news-ttl">第4回皮革セミナー終了のご報告</span></div><div class="news-item"><span class="news-date">2026.02.18</span><span class="news-ttl">第4回皮革セミナー開催のお知らせ</span></div></div></div>
-</aside>
+
+<!-- ④ パーツ > 本文のみ（分析依頼についてQ&A） -->
+<div class="cms-block">
+  <span class="cms-label">④ パーツ &gt; 本文のみ（分析依頼についてQ&amp;A 4件）</span>
+  <div class="lensa-text-block">
+    <div class="lensa-sec-ttl">分析依頼について</div>
+    <p><strong>Q. 試験の依頼はどのようにすればよいですか？</strong><br>
+    お問い合わせフォーム・メール・ご来所にてご依頼いただけます。</p>
+    <p><strong>Q. どのような試験・分析に対応していますか？</strong><br>
+    皮革物性・色堅牢度・防水・皮革化学・コラーゲン定量・エコレザー認証検査など多岐にわたります。</p>
+    <p><strong>Q. 急ぎで分析してもらえますか？</strong><br>
+    緊急対応も可能な場合があります。まずはお問い合わせください。</p>
+    <p><strong>Q. 分析方法はどのような規格に基づいていますか？</strong><br>
+    JIS・IUP等の国内外の規格に準じて実施しています。</p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
-<footer class="ftr">
-<div class="ftr-grid">
-<div class="ftr-col"><h4>試験・分析サービス</h4><a href="leather-analysis.html">皮革品質分析</a><a href="collagen.html">コラーゲン定量</a><a href="ecoleather.html">エコレザー認証検査</a><a href="peptide.html">ペプチドシークエンス</a><a href="synthetic.html">人工素材</a></div>
-<div class="ftr-col"><h4>ご依頼について</h4><a href="request-flow.html">分析依頼の流れ</a><a href="faq.html">よくあるご質問</a><a href="contact.html">お問い合わせ</a></div>
-<div class="ftr-col"><h4>研究活動</h4><a href="research-report.html">研究事業レポート</a><a href="donation.html">寄付・協力</a><a href="quality.html">品質管理</a></div>
-<div class="ftr-col"><h4>財団について</h4><a href="foundation.html">財団概要</a><a href="foundation-business.html">事業内容</a><a href="foundation-org.html">組織概要</a><a href="foundation-access.html">アクセス</a></div>
+
+<!-- ⑤ パーツ > 本文のみ（皮革製品についてQ&A） -->
+<div class="cms-block">
+  <span class="cms-label">⑤ パーツ &gt; 本文のみ（皮革製品についてQ&amp;A 3件）</span>
+  <div class="lensa-text-block">
+    <div class="lensa-sec-ttl">皮革製品について</div>
+    <p><strong>Q. 天然皮革と合成皮革の違いは何ですか？</strong><br>
+    合成皮革は基布全体に合成樹脂を使用し、天然皮革はコラーゲン繊維で構成されています。</p>
+    <p><strong>Q. 皮革製品はどのように保管すればよいですか？</strong><br>
+    直射日光・熱・湿気を避け、通気性の良い場所で保管してください。</p>
+    <p><strong>Q. 皮革の色落ちはなぜ起こりますか？</strong><br>
+    酸素・NOx・二酸化硫黄などのガスや、光・汗などの環境要因により変色・色落ちが生じます。</p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
-<div class="ftr-bottom">〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>© 一般財団法人 日本皮革研究所</div>
-</footer>
+
+<!-- ⑥ パーツ > 重要なお知らせ（CTA） -->
+<div class="cms-block">
+  <span class="cms-label">⑥ パーツ &gt; 重要なお知らせ（CTA）</span>
+  <div class="lensa-notice">
+    <div class="lensa-notice-text">解決しない場合はお気軽にお問い合わせください</div>
+    <a class="lensa-notice-btn red" href="contact.html">お問い合わせ</a>
+  </div>
+  <div class="cms-note blue">テキスト・ボタンラベル・リンク先は管理画面から変更可。</div>
 </div>
+
+<!-- ⑦ フッター（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">⑦ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <div class="lensa-footer">
+    <div class="lensa-footer-grid">
+      <div class="lensa-footer-col">
+        <h4>試験・分析サービス</h4>
+        <a href="leather-analysis-cms.html">皮革品質分析</a>
+        <a href="collagen.html">コラーゲン定量</a>
+        <a href="ecoleather.html">エコレザー認証検査</a>
+        <a href="peptide.html">ペプチドシークエンス</a>
+        <a href="synthetic.html">人工素材</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>ご依頼について</h4>
+        <a href="request-flow.html">分析依頼の流れ</a>
+        <a href="faq.html">よくあるご質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>研究活動</h4>
+        <a href="research-report.html">研究事業レポート</a>
+        <a href="donation.html">寄付・協力</a>
+        <a href="quality.html">品質管理</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>財団について</h4>
+        <a href="foundation.html">財団概要</a>
+        <a href="foundation-business.html">事業内容</a>
+        <a href="foundation-org.html">組織概要</a>
+        <a href="foundation-access.html">アクセス</a>
+      </div>
+    </div>
+    <div class="lensa-footer-btm">
+      〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>
+      © 一般財団法人 日本皮革研究所
+    </div>
+  </div>
+  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。</div>
+</div>
+
+</div><!-- .wrap -->
 </body>
 </html>

@@ -3,54 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: 底革 ｜ 日本皮革研究所</title>
+<title>WF: 底革（LENSAhub実装版）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
+<link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
 
-<div class="pg-label">WF: 底革</div>
+<div class="pg-label">WF: 底革（LENSAhub実装版）</div>
 <div class="wrap">
-<header class="hdr"><div class="logo">一般財団法人<br>日本皮革研究所</div><div class="hdr-right"><div class="hdr-util"><a href="#">分析依頼</a><a href="#">YouTube</a><a href="faq.html">FAQ</a><a href="foundation.html">財団概要</a><a href="#">アクセス</a><a href="contact.html">お問い合わせ</a></div><nav class="gnav"><a href="leather-analysis.html" class="on">皮革品質分析</a><a href="collagen.html" class="">コラーゲン定量</a><a href="ecoleather.html" class="">エコレザー認証検査</a><a href="peptide.html" class="">ペプチドシークエンス</a><a href="request-flow.html" class="">分析依頼の流れ</a><a href="research-report.html" class="">研究事業レポート</a><a href="foundation.html" class="">財団概要</a></nav></div></header>
-<div class="bc"><a href="index.html">HOME</a><span>›</span>皮革品質分析<span>›</span>底革</div>
-<div class="body">
-<main class="main">
-<div class="hero hero-sm">
-  <h1>底革</h1>
-  <p>靴底などに用いられる底革に特化した試験を行います。</p>
+
+<!-- 凡例 -->
+<div class="legend">
+  <strong>LENSAhub ブロック凡例：</strong>
+  <span class="legend-item"><span class="legend-dot orange"></span>共通パーツ（全ページ反映）</span>
+  <span class="legend-item"><span class="legend-dot blue"></span>ページ固有ブロック</span>
 </div>
-<div class="sec">
-  <span class="sec-ttl">試験項目・料金一覧</span>
-  <table>
-    <tr><th>試験項目</th><th>試験方法・規格</th><th>料金（税込）</th><th>試料サイズ</th></tr>
-    <tr><td>引張強さ</td><td>JIS K6545</td><td>¥3,300〜</td><td>15cm×5cm</td></tr><tr><td>屈曲試験</td><td>JIS K6545</td><td>¥4,620</td><td>15×15cm</td></tr><tr><td>吸水試験</td><td>JIS K6547</td><td>¥3,300</td><td>10×10cm</td></tr><tr><td>摩耗試験</td><td>JIS K6550</td><td>¥3,300〜</td><td>10×10cm</td></tr><tr><td>硬さ試験</td><td>JIS K6253</td><td>¥3,300</td><td>10×10cm</td></tr><tr><td>スリップ試験</td><td>JIS S6021</td><td>¥10,000</td><td>靴底片</td></tr>
-  </table>
-  
+
+<!-- ① ヘッダー > スタンダード（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">① ヘッダー &gt; スタンダード（共通パーツ / サイトパーツ管理で編集）</span>
+  <div class="lensa-header">
+    <div class="lensa-logo">一般財団法人<br>日本皮革研究所</div>
+    <nav class="lensa-gnav">
+      <a href="leather-analysis-cms.html" class="on">皮革品質分析</a>
+      <a href="collagen.html">コラーゲン定量</a>
+      <a href="ecoleather.html">エコレザー認証検査</a>
+      <a href="peptide.html">ペプチドシークエンス</a>
+      <a href="request-flow.html">分析依頼の流れ</a>
+      <a href="research-report.html">研究事業レポート</a>
+      <a href="foundation.html">財団概要</a>
+    </nav>
+  </div>
+  <div class="cms-note orange">全ページ共通。ナビ項目はサイトパーツ管理から一括編集。</div>
 </div>
-<div class="sec">
-  <span class="sec-ttl">ご依頼にあたって</span>
-  <div class="blk blk-txt" style="min-height:80px;">試料の送付方法・注意事項・納期などのご案内テキスト</div>
+
+<!-- ② パーツ > ページタイトル -->
+<div class="cms-block">
+  <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
+  <div class="lensa-page-title">
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>皮革品質分析<span>›</span>底革</div>
+    <div class="lensa-h1">底革</div>
+  </div>
+  <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
-<div class="cta">
-  <p>分析のご依頼・お見積はこちら</p>
-  <a class="cta-btn" href="contact.html">お問い合わせ</a>
-  <a class="cta-btn sub" href="request-flow.html">依頼の流れを見る</a>
-</div></main>
-<aside class="side">
-<div class="sb-blk"><h3>皮革品質分析メニュー</h3><div class="sb-blk-body"><a class="sb-link" href="leather-analysis.html">皮革品質分析トップ</a><a class="sb-link" href="leather-physics.html">皮革物性</a><a class="sb-link" href="leather-colorfall.html">色落ち・変退色</a><a class="sb-link" href="leather-waterproof.html">防水</a><a class="sb-link" href="leather-chemistry.html">皮革化学</a><a class="sb-link" href="leather-bottoml.html">底革</a><a class="sb-link" href="leather-others.html">革の判別など</a><a class="sb-link" href="leather-other-analyses.html">その他の分析</a></div></div>
-<div class="sb-blk"><h3>分析のご依頼・お問い合わせ</h3><div class="sb-cta-box"><p>分析依頼・見積のご相談はこちら</p><a href="contact.html">お問い合わせ</a></div></div>
-<div class="sb-blk"><h3>分析依頼の流れ</h3><div class="sb-blk-body"><div class="blk blk-txt">依頼〜報告書受取までの<br>フローをご確認ください</div><a class="sb-link" href="request-flow.html">▶ 分析依頼の流れへ</a></div></div>
-</aside>
+
+<!-- ③ パーツ > 本文のみ（リード文） -->
+<div class="cms-block">
+  <span class="cms-label">③ パーツ &gt; 本文のみ（リード文）</span>
+  <div class="lensa-text-block">
+    <p>靴底など底革に特化した各種試験（屈曲・引張・吸水・摩耗・硬さ・スリップ試験等）を各種JIS規格に基づき行います。</p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
-<footer class="ftr">
-<div class="ftr-grid">
-<div class="ftr-col"><h4>試験・分析サービス</h4><a href="leather-analysis.html">皮革品質分析</a><a href="collagen.html">コラーゲン定量</a><a href="ecoleather.html">エコレザー認証検査</a><a href="peptide.html">ペプチドシークエンス</a><a href="synthetic.html">人工素材</a></div>
-<div class="ftr-col"><h4>ご依頼について</h4><a href="request-flow.html">分析依頼の流れ</a><a href="faq.html">よくあるご質問</a><a href="contact.html">お問い合わせ</a></div>
-<div class="ftr-col"><h4>研究活動</h4><a href="research-report.html">研究事業レポート</a><a href="donation.html">寄付・協力</a><a href="quality.html">品質管理</a></div>
-<div class="ftr-col"><h4>財団について</h4><a href="foundation.html">財団概要</a><a href="foundation-business.html">事業内容</a><a href="foundation-org.html">組織概要</a><a href="foundation-access.html">アクセス</a></div>
+
+<!-- ④ パーツ > テーブル（試験項目・料金一覧） -->
+<div class="cms-block">
+  <span class="cms-label">④ パーツ &gt; テーブル（試験項目・料金一覧）</span>
+  <div class="lensa-table-block">
+    <div class="lensa-sec-ttl">試験項目・料金一覧</div>
+    <table class="lensa-table">
+      <thead>
+        <tr><th>試験項目</th><th>試験方法・規格</th><th>料金（税込）</th><th>試料サイズ</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>引張強さ</td><td>JIS K6545</td><td>¥3,300〜</td><td>15cm×5cm</td></tr>
+        <tr><td>屈曲試験</td><td>JIS K6545</td><td>¥4,620</td><td>15×15cm</td></tr>
+        <tr><td>吸水試験</td><td>JIS K6547</td><td>¥3,300</td><td>10×10cm</td></tr>
+        <tr><td>摩耗試験</td><td>JIS K6550</td><td>¥3,300〜</td><td>10×10cm</td></tr>
+        <tr><td>硬さ試験</td><td>JIS K6253</td><td>¥3,300</td><td>10×10cm</td></tr>
+        <tr><td>スリップ試験</td><td>JIS S6021</td><td>¥10,000</td><td>靴底片</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cms-note blue">管理画面の「テーブル」ブロックから行・列を追加。料金改訂時はここを更新。</div>
 </div>
-<div class="ftr-bottom">〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>© 一般財団法人 日本皮革研究所</div>
-</footer>
+
+<!-- ⑤ パーツ > 本文のみ（ご依頼にあたって） -->
+<div class="cms-block">
+  <span class="cms-label">⑤ パーツ &gt; 本文のみ（ご依頼にあたって）</span>
+  <div class="lensa-text-block">
+    <p>試験のご依頼にあたっては、試料サイズや試験方法の詳細についてご不明な点がある場合は、事前にお問い合わせください。複数試験の同時依頼も可能です。</p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
+
+<!-- ⑥ パーツ > 重要なお知らせ（CTA） -->
+<div class="cms-block">
+  <span class="cms-label">⑥ パーツ &gt; 重要なお知らせ（CTA）</span>
+  <div class="lensa-notice">
+    <div class="lensa-notice-text">分析依頼・お見積のご相談はお気軽にお問い合わせください</div>
+    <a class="lensa-notice-btn" href="request-flow.html">分析依頼の流れを確認する</a>
+    <a class="lensa-notice-btn red" href="contact.html">お問い合わせ</a>
+  </div>
+  <div class="cms-note blue">テキスト・ボタンラベル・リンク先は管理画面から変更可。</div>
+</div>
+
+<!-- ⑦ フッター（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">⑦ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <div class="lensa-footer">
+    <div class="lensa-footer-grid">
+      <div class="lensa-footer-col">
+        <h4>試験・分析サービス</h4>
+        <a href="leather-analysis-cms.html">皮革品質分析</a>
+        <a href="collagen.html">コラーゲン定量</a>
+        <a href="ecoleather.html">エコレザー認証検査</a>
+        <a href="peptide.html">ペプチドシークエンス</a>
+        <a href="synthetic.html">人工素材</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>ご依頼について</h4>
+        <a href="request-flow.html">分析依頼の流れ</a>
+        <a href="faq.html">よくあるご質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>研究活動</h4>
+        <a href="research-report.html">研究事業レポート</a>
+        <a href="donation.html">寄付・協力</a>
+        <a href="quality.html">品質管理</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>財団について</h4>
+        <a href="foundation.html">財団概要</a>
+        <a href="foundation-business.html">事業内容</a>
+        <a href="foundation-org.html">組織概要</a>
+        <a href="foundation-access.html">アクセス</a>
+      </div>
+    </div>
+    <div class="lensa-footer-btm">
+      〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>
+      © 一般財団法人 日本皮革研究所
+    </div>
+  </div>
+  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。</div>
+</div>
+
+</div><!-- .wrap -->
 </body>
 </html>
