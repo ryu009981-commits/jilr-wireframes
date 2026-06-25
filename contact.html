@@ -88,15 +88,19 @@
     <div class="lensa-form-row">
       <label class="lensa-form-label">お問い合わせ種別<span class="lensa-form-req">必須</span></label>
       <div class="lensa-form-radio">
-        <label><input type="radio" disabled> 分析依頼・見積</label>
-        <label><input type="radio" disabled> エコレザー認証</label>
-        <label><input type="radio" disabled> ペプチドシークエンス</label>
-        <label><input type="radio" disabled> その他</label>
+        <label><input type="radio" name="contact-type" disabled> 皮革関連分析</label>
+        <label><input type="radio" name="contact-type" disabled> 食品分析</label>
+        <label><input type="radio" name="contact-type" disabled> N末端ペプチドシークエンス</label>
+        <label><input type="radio" name="contact-type" disabled> その他</label>
       </div>
     </div>
     <div class="lensa-form-row">
       <label class="lensa-form-label">お問い合わせ内容<span class="lensa-form-req">必須</span></label>
       <div class="lensa-form-textarea"></div>
+    </div>
+    <div class="lensa-form-row">
+      <label class="lensa-form-label">添付ファイル</label>
+      <div class="lensa-form-file"><input type="file" disabled> <span class="lensa-form-file-note">試料写真・試験仕様書等（PDF/Excel/画像、複数添付可）</span></div>
     </div>
     <div class="lensa-form-row">
       <label class="lensa-form-label">個人情報の取扱い</label>
@@ -105,7 +109,7 @@
     </div>
     <button class="lensa-form-submit">送信する</button>
   </div>
-  <div class="cms-note blue">フォームフィールドはLENSAhubフォームビルダーで設定。必須・任意の切り替え可。</div>
+  <div class="cms-note blue">フォームフィールドはLENSAhubフォームビルダーで設定。必須・任意の切り替え可。お問い合わせ種別は「皮革関連分析／食品分析／N末端ペプチドシークエンス／その他」の4項目に変更、添付ファイル欄を新規追加（フレーム変更点フィードバック対応）。添付ファイルの形式・サイズ上限はLENSAhubフォームビルダーの仕様に準拠。</div>
 </div>
 
 <!-- ⑤ フッター（共通） -->
