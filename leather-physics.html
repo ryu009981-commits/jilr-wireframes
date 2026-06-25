@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: 皮革物性（LENSAhub実装版）｜ 日本皮革研究所</title>
+<title>WF: 物性試験（テンプレート試作版）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
 <link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
 
-<div class="pg-label">WF: 皮革物性（LENSAhub実装版）</div>
+<div class="pg-label">WF: 物性試験（テンプレート試作版 / boken.or.jp形式）</div>
 <div class="wrap">
 
 <!-- 凡例 -->
@@ -20,78 +20,130 @@
   <span class="legend-item"><span class="legend-dot blue"></span>ページ固有ブロック</span>
 </div>
 
+<div class="cms-note orange" style="margin:12px 28px;padding:10px 14px;font-size:11px;">
+【試作テンプレートについて】boken.or.jp（目的／試験方法／試験結果例／評価基準／料金）の構成を参考に、「皮革関連分析」9項目共通で使えるテンプレートとして試作。この構成でよければ、残り8項目（染色堅ろう度・防水・化学・動物種判別・クレーム品原因分析・有害物質・エコレザー認証・車両関連）に展開する。
+</div>
+
 <!-- ① ヘッダー > スタンダード（共通） -->
 <div class="cms-block shared">
   <span class="cms-label shared">① ヘッダー &gt; スタンダード（共通パーツ / サイトパーツ管理で編集）</span>
   <div class="lensa-header">
     <div class="lensa-logo">一般財団法人<br>日本皮革研究所</div>
     <nav class="lensa-gnav">
-      <a href="leather-analysis-cms.html" class="on">皮革品質分析</a>
-      <a href="collagen.html">コラーゲン定量</a>
-      <a href="ecoleather.html">エコレザー認証検査</a>
-      <a href="peptide.html">ペプチドシークエンス</a>
+      <a href="leather-analysis-cms.html" class="on">皮革関連分析</a>
+      <a href="collagen.html">コラーゲン・食品関連分析</a>
+      <a href="ecoleather.html">エコレザー認証試験</a>
+      <a href="peptide.html">N末端ペプチドシークエンス</a>
+      <a href="test-products.html">試薬製品</a>
       <a href="request-flow.html">分析依頼の流れ</a>
-      <a href="research-report.html">研究事業レポート</a>
       <a href="foundation.html">財団概要</a>
     </nav>
   </div>
-  <div class="cms-note orange">全ページ共通。ナビ項目はサイトパーツ管理から一括編集。</div>
+  <div class="cms-note orange">全ページ共通。大項目を5カテゴリ（皮革関連分析／コラーゲン・食品関連分析／エコレザー認証試験／N末端ペプチドシークエンス／試薬製品）に再編。ナビ項目はサイトパーツ管理から一括編集。</div>
 </div>
 
 <!-- ② パーツ > ページタイトル -->
 <div class="cms-block">
   <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
   <div class="lensa-page-title">
-    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>皮革品質分析<span>›</span>皮革物性</div>
-    <div class="lensa-h1">皮革物性</div>
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span><a href="leather-analysis-cms.html">皮革関連分析</a><span>›</span>物性試験</div>
+    <div class="lensa-h1">物性試験</div>
   </div>
   <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
 
-<!-- ③ パーツ > 本文のみ（リード文） -->
+<!-- ③ パーツ > 本文のみ（目的） -->
 <div class="cms-block">
-  <span class="cms-label">③ パーツ &gt; 本文のみ（リード文）</span>
+  <span class="cms-label">③ パーツ &gt; 本文のみ（目的）</span>
   <div class="lensa-text-block">
-    <p>低温屈曲試験・引張強さ・引裂強さ・摩耗試験・接着強さ・柔軟度など、皮革の物理的特性を各種JIS・ISO規格に基づき測定します。</p>
+    <div class="lensa-sec-ttl">目的</div>
+    <p>皮革製品は使用中に屈曲・摩耗・引張・荷重など様々な物理的負荷を受けます。物性試験では、厚さ・引張強さ・引裂荷重・耐屈曲性・摩耗性・耐熱老化性など皮革の物理的特性を各種JIS・ISO規格に基づき測定し、製品の耐久性・品質の評価に役立てます。</p>
   </div>
-  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
+  <div class="cms-note blue">【仮テキスト】試験概要パンフレットの記載をベースに作成。リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ④ パーツ > テーブル（試験項目・料金一覧） -->
+<!-- ④ パーツ > 本文と画像（試験方法） -->
 <div class="cms-block">
-  <span class="cms-label">④ パーツ &gt; テーブル（試験項目・料金一覧）</span>
+  <span class="cms-label">④ パーツ &gt; 本文と画像（試験方法・試験機器）</span>
+  <div class="lensa-textimg-block">
+    <div class="lensa-sec-ttl">試験方法</div>
+    <div class="lensa-textimg">
+      <div class="lensa-textimg-img">試験機器<br>写真</div>
+      <div class="lensa-textimg-body">
+        <p>各試験項目はJIS・ISO規格に基づき、専用の試験機器（フレクソメータ、デマチャ屈曲試験機、テーバ形摩耗試験機 等）を用いて実施します。試験項目ごとの詳細な手順・試験機器の写真は項目決定後に追加予定です。</p>
+      </div>
+    </div>
+  </div>
+  <div class="cms-note blue">【仮テキスト】試験項目ごとに試験機器写真・動画・試験結果例（boken.or.jp形式）を追加できる構成。画像はメディアライブラリからアップロード。</div>
+</div>
+
+<!-- ⑤ パーツ > テーブル（試験項目・料金一覧） -->
+<div class="cms-block">
+  <span class="cms-label">⑤ パーツ &gt; テーブル（試験項目・料金一覧／拡張可能）</span>
   <div class="lensa-table-block">
     <div class="lensa-sec-ttl">試験項目・料金一覧</div>
     <table class="lensa-table">
       <thead>
-        <tr><th>試験項目</th><th>試験方法・規格</th><th>料金（税込）</th><th>試料サイズ</th></tr>
+        <tr><th>試験項目</th><th>条件</th><th>試験方法（ISO）</th><th>試験方法（JIS）</th><th>料金（税別）</th><th>試験サイズ</th></tr>
       </thead>
       <tbody>
-        <tr><td>低温屈曲試験</td><td>-30℃ デマットグラフ法</td><td>¥4,400</td><td>15×15cm</td></tr>
-        <tr><td>引張強さ・伸び</td><td>JIS K6545</td><td>¥2,200〜</td><td>15cm×5cm</td></tr>
-        <tr><td>引裂強さ</td><td>JIS K6552</td><td>¥2,200〜</td><td>5cm×7.5cm</td></tr>
-        <tr><td>摩耗試験</td><td>JIS K6550</td><td>¥3,300〜</td><td>15×15cm</td></tr>
-        <tr><td>接着強さ</td><td>JIS K6854</td><td>¥2,200</td><td>15cm×2.5cm</td></tr>
-        <tr><td>柔軟度</td><td>ISO 3380/JIS K6557-7</td><td>¥520</td><td>-</td></tr>
-        <tr><td>屈曲試験（フレクスメーター）</td><td>JIS K6545</td><td>¥4,620</td><td>15×15cm</td></tr>
+        <tr><td>厚さ</td><td>-</td><td>ISO 2589</td><td>JIS K6557-1</td><td>¥1,100</td><td>15cm角</td></tr>
+        <tr><td>引張強さ</td><td>-</td><td>ISO 3376</td><td>JIS K6557-2</td><td>¥3,160</td><td>25cm角</td></tr>
+        <tr><td>伸び</td><td>-</td><td>-</td><td>-</td><td>¥3,160</td><td>-</td></tr>
+        <tr><td>引裂荷重</td><td>シングルエッジ</td><td>ISO 3377-1</td><td>JIS K6557-3</td><td>¥3,160</td><td>25cm角</td></tr>
+        <tr><td>引裂荷重</td><td>ダブルエッジ</td><td>ISO 3377-2</td><td>JIS K6557-4</td><td>¥3,160</td><td>25cm角</td></tr>
+        <tr><td>銀面割れ</td><td>-</td><td>ISO 3379</td><td>JIS K6557-10</td><td>¥3,160</td><td>15cm角</td></tr>
+        <tr><td>仕上げ膜のはく離強さ</td><td>乾燥</td><td>ISO 11644</td><td>JIS K6557-9</td><td>¥3,200</td><td>25cm角</td></tr>
+        <tr><td>仕上げ膜のはく離強さ</td><td>湿潤</td><td>-</td><td>-</td><td>¥4,400</td><td>25cm角</td></tr>
+        <tr><td>液中熱収縮温度</td><td>-</td><td>ISO 3380</td><td>JIS K6557-7</td><td>¥3,000</td><td>15cm角</td></tr>
+        <tr><td>縫い目強度</td><td>-</td><td>ISO 23910</td><td>-</td><td>¥3,960</td><td>30cm角</td></tr>
+        <tr><td>柔軟性（ソフトネステスター）</td><td>-</td><td>ISO 17235</td><td>-</td><td>¥1,800</td><td>15cm角</td></tr>
+        <tr><td>耐屈曲性（フレクソメータ）</td><td>乾燥／2万回迄</td><td>ISO 5402-1</td><td>JIS K6557-8</td><td>¥2,640（＋1万回毎¥520）</td><td>20cm角</td></tr>
+        <tr><td>耐屈曲性（フレクソメータ）</td><td>湿潤／2万回迄</td><td>ISO 5402-1</td><td>JIS K6557-8</td><td>¥2,640（＋1万回毎¥520）</td><td>20cm角</td></tr>
+        <tr><td>耐屈曲性（デマチャ）</td><td>常温／2万回迄</td><td>ISO 132</td><td>JIS K6260</td><td>¥2,400（＋1万回毎¥1,200）</td><td>20cm角</td></tr>
+        <tr><td>耐屈曲性（デマチャ）</td><td>低温-10℃／2万回迄</td><td>-</td><td>-</td><td>¥3,000（＋1万回毎¥1,200）</td><td>20cm角</td></tr>
+        <tr><td>耐屈曲性（デマチャ）</td><td>低温-20℃／2万回迄</td><td>-</td><td>-</td><td>¥3,200（＋1万回毎¥1,200）</td><td>20cm角</td></tr>
+        <tr><td>耐屈曲性（デマチャ）</td><td>低温-30℃／2万回迄</td><td>-</td><td>-</td><td>¥3,600（＋1万回毎¥1,200）</td><td>20cm角</td></tr>
+        <tr><td>摩耗性（ユニバーサル形）</td><td>-</td><td>-</td><td>JIS L1096 A-1法</td><td>¥2,640</td><td>30cm角</td></tr>
+        <tr><td>摩耗性（スコット形）</td><td>2万回迄</td><td>ISO 5398-1</td><td>JIS L1096 B法</td><td>¥2,640（＋1万回毎¥660）</td><td>20cm角</td></tr>
+        <tr><td>摩耗性（テーバ形）</td><td>500g／1000回迄</td><td>ISO 17076</td><td>JIS L1096 C法</td><td>¥2,640（＋1000回毎¥790）</td><td>30cm角</td></tr>
+        <tr><td>摩耗性（テーバ形）</td><td>1kg／1000回迄</td><td>-</td><td>-</td><td>¥3,960（＋1000回毎¥920）</td><td>30cm角</td></tr>
+        <tr><td>摩耗性（学振摩耗）</td><td>2000回迄</td><td>-</td><td>-</td><td>¥2,640（＋1000回毎¥660）</td><td>-</td></tr>
+        <tr><td>摩耗減量</td><td>乾燥／1000回×5セット</td><td>ISO 17076</td><td>JIS L1096 C法</td><td>¥7,920（＋1000回毎¥920）</td><td>25cm角</td></tr>
+        <tr><td>摩耗減量</td><td>湿潤／1000回×5セット</td><td>ISO 17076</td><td>JIS L1096 C法</td><td>¥7,920（＋1000回毎¥920）</td><td>25cm角</td></tr>
+        <tr><td>定荷重（伸び率）</td><td>-</td><td>-</td><td>-</td><td>¥3,160</td><td>25cm角</td></tr>
+        <tr><td>定荷重（セット率）</td><td>-</td><td>-</td><td>-</td><td>¥1,580</td><td>-</td></tr>
+        <tr><td>燃焼性</td><td>-</td><td>F.A.A-25853 B法</td><td>JIS L1091 A-4法</td><td>¥6,000</td><td>30cm角</td></tr>
+        <tr><td>耐湿性（ジャングル）</td><td>100時間迄</td><td>-</td><td>-</td><td>¥5,000（＋100時間毎¥1,500）</td><td>20cm角</td></tr>
+        <tr><td>耐熱老化性（ギア式）</td><td>100時間迄</td><td>ISO 188</td><td>JIS K6257／JIS K7212</td><td>¥2,640（＋100時間毎¥1,180）</td><td>20cm角</td></tr>
       </tbody>
     </table>
   </div>
-  <div class="cms-note blue">管理画面の「テーブル」ブロックから行・列を追加。料金改訂時はここを更新。</div>
+  <div class="cms-note blue">クライアント提供Excel「項目一覧.xlsx」物性試験シートの全項目を反映。項目追加時は管理画面のテーブル機能で行を追加するだけで対応可能。</div>
 </div>
 
-<!-- ⑤ パーツ > 本文のみ（ご依頼にあたって） -->
+<!-- ⑥ パーツ > 本文のみ（評価基準） -->
 <div class="cms-block">
-  <span class="cms-label">⑤ パーツ &gt; 本文のみ（ご依頼にあたって）</span>
+  <span class="cms-label">⑥ パーツ &gt; 本文のみ（評価基準）</span>
+  <div class="lensa-text-block">
+    <div class="lensa-sec-ttl">評価基準</div>
+    <p>各試験項目の評価基準・判定方法の詳細は、試験項目決定後に追加します。</p>
+  </div>
+  <div class="cms-note blue">【仮テキスト】boken.or.jp同様、評価基準の参照先（規格表等）をここに掲載する想定。</div>
+</div>
+
+<!-- ⑦ パーツ > 本文のみ（ご依頼にあたって） -->
+<div class="cms-block">
+  <span class="cms-label">⑦ パーツ &gt; 本文のみ（ご依頼にあたって）</span>
   <div class="lensa-text-block">
     <p>試験のご依頼にあたっては、試料サイズや試験方法の詳細についてご不明な点がある場合は、事前にお問い合わせください。複数試験の同時依頼も可能です。</p>
   </div>
   <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ⑥ パーツ > 重要なお知らせ（CTA） -->
+<!-- ⑧ パーツ > 重要なお知らせ（CTA） -->
 <div class="cms-block">
-  <span class="cms-label">⑥ パーツ &gt; 重要なお知らせ（CTA）</span>
+  <span class="cms-label">⑧ パーツ &gt; 重要なお知らせ（CTA）</span>
   <div class="lensa-notice">
     <div class="lensa-notice-text">分析依頼・お見積のご相談はお気軽にお問い合わせください</div>
     <a class="lensa-notice-btn" href="request-flow.html">分析依頼の流れを確認する</a>
@@ -100,30 +152,31 @@
   <div class="cms-note blue">テキスト・ボタンラベル・リンク先は管理画面から変更可。</div>
 </div>
 
-<!-- ⑦ フッター（共通） -->
+<!-- ⑨ フッター（共通） -->
 <div class="cms-block shared">
-  <span class="cms-label shared">⑦ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <span class="cms-label shared">⑨ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
   <div class="lensa-footer">
     <div class="lensa-footer-grid">
       <div class="lensa-footer-col">
-        <h4>試験・分析サービス</h4>
-        <a href="leather-analysis-cms.html">皮革品質分析</a>
-        <a href="collagen.html">コラーゲン定量</a>
-        <a href="ecoleather.html">エコレザー認証検査</a>
-        <a href="peptide.html">ペプチドシークエンス</a>
-        <a href="synthetic.html">人工素材</a>
+        <h4>皮革関連分析</h4>
+        <a href="leather-physics.html">物性試験</a>
+        <a href="leather-colorfall.html">染色堅ろう度試験</a>
+        <a href="leather-waterproof.html">防水試験</a>
+        <a href="leather-chemistry.html">化学試験</a>
+        <a href="leather-others.html">動物種判別試験</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>その他の分析</h4>
+        <a href="collagen.html">コラーゲン・食品関連分析</a>
+        <a href="ecoleather.html">エコレザー認証試験</a>
+        <a href="peptide.html">N末端ペプチドシークエンス</a>
+        <a href="test-products.html">試薬製品</a>
       </div>
       <div class="lensa-footer-col">
         <h4>ご依頼について</h4>
         <a href="request-flow.html">分析依頼の流れ</a>
         <a href="faq.html">よくあるご質問</a>
         <a href="contact.html">お問い合わせ</a>
-      </div>
-      <div class="lensa-footer-col">
-        <h4>研究活動</h4>
-        <a href="research-report.html">研究事業レポート</a>
-        <a href="donation.html">寄付・協力</a>
-        <a href="quality.html">品質管理</a>
       </div>
       <div class="lensa-footer-col">
         <h4>財団について</h4>
@@ -138,7 +191,7 @@
       © 一般財団法人 日本皮革研究所
     </div>
   </div>
-  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。</div>
+  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。フッターの大項目もナビと同様に5カテゴリ構成へ再編。</div>
 </div>
 
 </div><!-- .wrap -->
