@@ -52,11 +52,55 @@
   <span class="cms-label">③ パーツ &gt; 本文のみ（組織図: 管理画面からアップロード）</span>
   <div class="lensa-text-block">
     <div class="lensa-sec-ttl" style="margin-bottom:0;">組織図</div>
-    <div style="text-align:center;">
-      <img src="org-chart.jpg" alt="組織図" style="max-width:100%;margin-top:8px;">
+    <div style="overflow-x:auto;padding:16px 0;font-size:11px;color:#333;">
+      <style>
+        .org-box{border:1px solid #999;padding:6px 12px;background:#fff;white-space:nowrap;display:inline-block;}
+        .org-box.lvl1{background:#444;color:#fff;font-weight:bold;}
+        .org-box.lvl2{background:#888;color:#fff;}
+        .org-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+        .org-children{display:flex;flex-direction:column;gap:6px;padding-left:24px;border-left:1px dashed #999;margin-left:8px;}
+      </style>
+      <div class="org-row">
+        <span class="org-box lvl1">理事会</span>
+        <div class="org-children">
+          <div class="org-row" style="margin-bottom:0;">
+            <span class="org-box lvl1">理事長</span>
+            <div class="org-children">
+              <div class="org-row" style="margin-bottom:0;">
+                <span class="org-box lvl2">研究所長</span>
+                <div class="org-children">
+                  <span class="org-box">研究所運営会議</span>
+                  <div class="org-row" style="margin-bottom:0;">
+                    <span class="org-box">分析センター</span>
+                    <div class="org-children">
+                      <span class="org-box">皮革分析センター（仮称）</span>
+                      <span class="org-box">コラーゲン食品分析センター（仮称）</span>
+                    </div>
+                  </div>
+                  <div class="org-row" style="margin-bottom:0;">
+                    <span class="org-box">マトリックス生体工学部門</span>
+                    <div class="org-children">
+                      <span class="org-box">マトリックス生化学研究グループ</span>
+                      <span class="org-box">皮革応用環境学研究グループ</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="org-row" style="margin-bottom:0;margin-top:6px;">
+                <span class="org-box lvl2">事務局長</span>
+                <div class="org-children"><span class="org-box">事務局</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="org-row">
+        <span class="org-box lvl1">評議員会</span>
+        <span class="org-box lvl1">監事</span>
+      </div>
     </div>
   </div>
-  <div class="cms-note blue">旧サイト（jilr.or.jp/labo/org.html）の組織図画像を仮表示。役員名簿の更新に合わせて新しい組織図を管理画面からアップロードし差し替え。</div>
+  <div class="cms-note blue">クライアント提供「組織図.pptx」のSmartArt構造をHTML図表として再現（理事会→理事長→研究所長／事務局長、研究所長配下に研究所運営会議・分析センター・マトリックス生体工学部門）。「皮革分析センター」「コラーゲン食品分析センター」はクライアント指定の仮称のため、正式名称決定後に管理画面から差し替え可能な設計。最終的な組織図画像は管理画面の画像アップロード機能で正式版に差し替え予定。</div>
 </div>
 
 <!-- ④ パーツ > テーブル（役員一覧） -->
