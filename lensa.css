@@ -73,6 +73,7 @@
 /* パーツ > 本文のみ */
 .lensa-text-block { background: #fff; padding: 24px 28px; border-bottom: 1px solid #eee; }
 .lensa-text-block p { font-size: 13px; line-height: 1.8; color: #444; }
+.lensa-text-block a, .lensa-table a { color: #0044cc; text-decoration: underline; }
 
 /* パーツ > テーブル */
 .lensa-table-block { background: #fff; padding: 24px 28px; border-bottom: 1px solid #eee; }
