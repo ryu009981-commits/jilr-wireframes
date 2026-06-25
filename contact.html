@@ -57,36 +57,42 @@
   <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ④ お問い合わせフォームブロック -->
+<!-- ④ お問い合わせフォームブロック（LENSAhub標準コンタクトフォーム） -->
 <div class="cms-block">
-  <span class="cms-label">④ お問い合わせフォームブロック（.lensa-form-block）</span>
+  <span class="cms-label">④ lensaContactForm（LENSAhub標準お問い合わせフォーム機能）</span>
   <div class="lensa-form-block">
+    <div class="lensa-cf-title">お問い合わせフォーム</div>
+    <p class="lensa-cf-desc">※「*」は必須項目です。</p>
     <div class="lensa-form-row">
-      <label class="lensa-form-label">お名前<span class="lensa-form-req">必須</span></label>
-      <div class="lensa-form-input"></div>
+      <label class="lensa-form-label">お名前<span class="lensa-form-req">*</span></label>
+      <div class="lensa-form-input"><span class="lensa-form-placeholder">お名前を入力してください</span></div>
     </div>
     <div class="lensa-form-row">
-      <label class="lensa-form-label">勤務先・所属<span class="lensa-form-req">必須</span></label>
-      <div class="lensa-form-input"></div>
+      <label class="lensa-form-label">勤務先・所属<span class="lensa-form-req">*</span></label>
+      <div class="lensa-form-input"><span class="lensa-form-placeholder">勤務先・所属を入力してください</span></div>
     </div>
     <div class="lensa-form-row">
       <div class="lensa-form-2col">
         <div>
-          <label class="lensa-form-label">TEL<span class="lensa-form-req">必須</span></label>
-          <div class="lensa-form-input"></div>
+          <label class="lensa-form-label">TEL<span class="lensa-form-req">*</span></label>
+          <div class="lensa-form-input"><span class="lensa-form-placeholder">000-0000-0000</span></div>
         </div>
         <div>
           <label class="lensa-form-label">FAX</label>
-          <div class="lensa-form-input"></div>
+          <div class="lensa-form-input"><span class="lensa-form-placeholder">000-0000-0000</span></div>
         </div>
       </div>
     </div>
     <div class="lensa-form-row">
-      <label class="lensa-form-label">メールアドレス<span class="lensa-form-req">必須</span></label>
-      <div class="lensa-form-input"></div>
+      <label class="lensa-form-label">メールアドレス<span class="lensa-form-req">*</span></label>
+      <div class="lensa-form-input"><span class="lensa-form-placeholder">example@example.com</span></div>
     </div>
     <div class="lensa-form-row">
-      <label class="lensa-form-label">お問い合わせ種別<span class="lensa-form-req">必須</span></label>
+      <label class="lensa-form-label">メールアドレス（確認用）<span class="lensa-form-req">*</span></label>
+      <div class="lensa-form-input"><span class="lensa-form-placeholder">上記で入力したメールアドレスを再度入力してください</span></div>
+    </div>
+    <div class="lensa-form-row">
+      <label class="lensa-form-label">お問い合わせ種別<span class="lensa-form-req">*</span></label>
       <div class="lensa-form-radio">
         <label><input type="radio" name="contact-type" disabled> 皮革関連分析</label>
         <label><input type="radio" name="contact-type" disabled> 食品分析</label>
@@ -95,21 +101,24 @@
       </div>
     </div>
     <div class="lensa-form-row">
-      <label class="lensa-form-label">お問い合わせ内容<span class="lensa-form-req">必須</span></label>
-      <div class="lensa-form-textarea"></div>
+      <label class="lensa-form-label">お問い合わせ内容<span class="lensa-form-req">*</span></label>
+      <div class="lensa-form-textarea"><span class="lensa-form-placeholder">お問い合わせ内容を入力してください</span></div>
     </div>
     <div class="lensa-form-row">
       <label class="lensa-form-label">添付ファイル</label>
       <div class="lensa-form-file"><input type="file" disabled> <span class="lensa-form-file-note">試料写真・試験仕様書等（PDF/Excel/画像、複数添付可）</span></div>
     </div>
     <div class="lensa-form-row">
-      <label class="lensa-form-label">個人情報の取扱い</label>
+      <label class="lensa-form-label">個人情報の取扱い<span class="lensa-form-req">*</span></label>
       <div class="lensa-form-privacy">個人情報取扱方針テキスト（収集目的・管理体制・第三者提供・開示請求等の説明）が入ります。</div>
       <p style="font-size:11px;margin-top:8px;color:#444;"><input type="checkbox" disabled> 個人情報の取扱いに同意する</p>
     </div>
-    <button class="lensa-form-submit">送信する</button>
+    <div class="lensa-form-btns">
+      <button class="lensa-form-btn-confirm">確認する</button>
+      <button class="lensa-form-submit">送信する</button>
+    </div>
   </div>
-  <div class="cms-note blue">フォームフィールドはLENSAhubフォームビルダーで設定。必須・任意の切り替え可。お問い合わせ種別は「皮革関連分析／食品分析／N末端ペプチドシークエンス／その他」の4項目に変更、添付ファイル欄を新規追加（フレーム変更点フィードバック対応）。添付ファイルの形式・サイズ上限はLENSAhubフォームビルダーの仕様に準拠。</div>
+  <div class="cms-note blue">LENSAhub標準機能「lensaContactForm」を使用。フォームビルダーで項目の追加・削除・必須切替が可能（参考: groundgolf.or.jp/applications/contact/の実装）。入力→確認→送信の2段階送信フローに対応。お問い合わせ種別は「皮革関連分析／食品分析／N末端ペプチドシークエンス／その他」の4項目に変更、添付ファイル欄を新規追加（フレーム変更点フィードバック対応）。添付ファイルの形式・サイズ上限はLENSAhubフォームビルダーの仕様に準拠。</div>
 </div>
 
 <!-- ⑤ フッター（共通） -->
