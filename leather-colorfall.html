@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: 色落ち・変退色（LENSAhub実装版）｜ 日本皮革研究所</title>
+<title>WF: 染色堅ろう度試験（テンプレート展開版）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
 <link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
 
-<div class="pg-label">WF: 色落ち・変退色（LENSAhub実装版）</div>
+<div class="pg-label">WF: 染色堅ろう度試験（テンプレート展開版 / boken.or.jp形式）</div>
 <div class="wrap">
 
 <!-- 凡例 -->
@@ -26,12 +26,12 @@
   <div class="lensa-header">
     <div class="lensa-logo">一般財団法人<br>日本皮革研究所</div>
     <nav class="lensa-gnav">
-      <a href="leather-analysis-cms.html" class="on">皮革品質分析</a>
-      <a href="collagen.html">コラーゲン定量</a>
-      <a href="ecoleather.html">エコレザー認証検査</a>
-      <a href="peptide.html">ペプチドシークエンス</a>
+      <a href="leather-analysis-cms.html" class="on">皮革関連分析</a>
+      <a href="collagen.html">コラーゲン・食品関連分析</a>
+      <a href="ecoleather.html">エコレザー認証試験</a>
+      <a href="peptide.html">N末端ペプチドシークエンス</a>
+      <a href="test-products.html">試薬製品</a>
       <a href="request-flow.html">分析依頼の流れ</a>
-      <a href="research-report.html">研究事業レポート</a>
       <a href="foundation.html">財団概要</a>
     </nav>
   </div>
@@ -42,55 +42,96 @@
 <div class="cms-block">
   <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
   <div class="lensa-page-title">
-    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>皮革品質分析<span>›</span>色落ち・変退色</div>
-    <div class="lensa-h1">色落ち・変退色</div>
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span><a href="leather-analysis-cms.html">皮革関連分析</a><span>›</span>染色堅ろう度試験</div>
+    <div class="lensa-h1">染色堅ろう度試験</div>
   </div>
   <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
 
-<!-- ③ パーツ > 本文のみ（リード文） -->
+<!-- ③ パーツ > 本文のみ（目的） -->
 <div class="cms-block">
-  <span class="cms-label">③ パーツ &gt; 本文のみ（リード文）</span>
+  <span class="cms-label">③ パーツ &gt; 本文のみ（目的）</span>
   <div class="lensa-text-block">
-    <p>摩擦・汗・水・光・ガスなど、さまざまな要因による色落ち・変退色を各種国際規格（ISO・JIS）に基づき試験します。</p>
+    <div class="lensa-sec-ttl">目的</div>
+    <p>皮革製品は摩擦・汗・水・光・クリーニングなど様々な要因により色落ち・変退色が生じます。染色堅ろう度試験では、これらの要因に対する染色の耐久性を各種JIS・ISO規格に基づき測定し、製品の品質評価・クレーム予防に役立てます。</p>
   </div>
-  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
+  <div class="cms-note blue">【仮テキスト】試験概要パンフレットの記載をベースに作成。リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ④ パーツ > テーブル（試験項目・料金一覧） -->
+<!-- ④ パーツ > 本文と画像（試験方法） -->
 <div class="cms-block">
-  <span class="cms-label">④ パーツ &gt; テーブル（試験項目・料金一覧）</span>
+  <span class="cms-label">④ パーツ &gt; 本文と画像（試験方法・試験機器）</span>
+  <div class="lensa-textimg-block">
+    <div class="lensa-sec-ttl">試験方法</div>
+    <div class="lensa-textimg">
+      <div class="lensa-textimg-img">試験機器<br>写真</div>
+      <div class="lensa-textimg-body">
+        <p>染色摩擦堅ろう度はクロックメータ法・学振法・べスリック法など複数の試験機器・規格で測定します。耐光性試験はカーボンアーク式の促進耐光性試験機を用いて行います。試験項目ごとの詳細な手順・試験機器の写真は追加予定です。</p>
+      </div>
+    </div>
+  </div>
+  <div class="cms-note blue">【仮テキスト】試験項目ごとに試験機器写真・動画・試験結果例（boken.or.jp形式）を追加できる構成。画像はメディアライブラリからアップロード。</div>
+</div>
+
+<!-- ⑤ パーツ > テーブル（試験項目・料金一覧） -->
+<div class="cms-block">
+  <span class="cms-label">⑤ パーツ &gt; テーブル（試験項目・料金一覧／拡張可能）</span>
   <div class="lensa-table-block">
     <div class="lensa-sec-ttl">試験項目・料金一覧</div>
     <table class="lensa-table">
       <thead>
-        <tr><th>試験項目</th><th>試験方法・規格</th><th>料金（税込）</th><th>試料サイズ</th></tr>
+        <tr><th>大分類</th><th>試験項目</th><th>条件</th><th>試験方法（JIS）</th><th>試験方法（ISO）</th><th>料金（税別）</th><th>試験サイズ</th></tr>
       </thead>
       <tbody>
-        <tr><td>摩擦堅牢度（乾燥・湿潤）</td><td>ISO 11640</td><td>¥2,640〜</td><td>15×15cm</td></tr>
-        <tr><td>汗堅牢度</td><td>ISO 105-E04</td><td>¥2,640〜</td><td>10×4cm</td></tr>
-        <tr><td>水堅牢度</td><td>ISO 11642</td><td>¥2,640</td><td>10×4cm</td></tr>
-        <tr><td>光堅牢度</td><td>ISO 105-B02</td><td>¥5,280〜</td><td>10×4cm</td></tr>
-        <tr><td>ガス堅牢度（NOx）</td><td>ISO 105-G02</td><td>¥3,960</td><td>10×4cm</td></tr>
-        <tr><td>変退色（変褪色）</td><td>グレースケール目視</td><td>¥550</td><td>-</td></tr>
+        <tr><td>染色摩擦堅ろう度</td><td>クロックメータ法</td><td>乾燥</td><td>JIS K6559-1</td><td>ISO 20433</td><td>¥1,500</td><td>各10cm×15cm</td></tr>
+        <tr><td>染色摩擦堅ろう度</td><td>クロックメータ法</td><td>湿潤</td><td>JIS K6559-1</td><td>ISO 20433</td><td>¥1,500</td><td>各10cm×15cm</td></tr>
+        <tr><td>染色摩擦堅ろう度</td><td>クロックメータ法</td><td>アルカリ性汗</td><td>JIS K6559-1</td><td>ISO 20433</td><td>¥1,500</td><td>各10cm×15cm</td></tr>
+        <tr><td>染色摩擦堅ろう度</td><td>クロックメータ法</td><td>酸性汗</td><td>JIS K6559-1</td><td>ISO 20433</td><td>¥1,500</td><td>各10cm×15cm</td></tr>
+        <tr><td>染色摩擦堅ろう度</td><td>学振法</td><td>乾燥</td><td>JIS K6559-2</td><td>-</td><td>¥2,000</td><td>各3.5cm×30cm</td></tr>
+        <tr><td>染色摩擦堅ろう度</td><td>学振法</td><td>湿潤</td><td>JIS K6559-2</td><td>-</td><td>¥2,000</td><td>各3.5cm×30cm</td></tr>
+        <tr><td>染色摩擦堅ろう度</td><td>学振法</td><td>アルカリ性汗</td><td>JIS K6559-2</td><td>-</td><td>¥2,000</td><td>各3.5cm×30cm</td></tr>
+        <tr><td>染色摩擦堅ろう度</td><td>学振法</td><td>酸性汗</td><td>JIS K6559-2</td><td>-</td><td>¥2,000</td><td>各3.5cm×30cm</td></tr>
+        <tr><td>染色摩擦堅ろう度</td><td>べスリック法</td><td>乾燥</td><td>JIS K6559-3</td><td>ISO 11640</td><td>¥2,000</td><td>各15cm×15cm</td></tr>
+        <tr><td>染色摩擦堅ろう度</td><td>べスリック法</td><td>湿潤</td><td>JIS K6559-3</td><td>ISO 11640</td><td>¥2,000</td><td>各15cm×15cm</td></tr>
+        <tr><td>染色堅ろう度</td><td>ドライクリーニング</td><td>-</td><td>JIS L0860／JIS K6552</td><td>ISO 105D-01</td><td>¥6,600</td><td>各20cm×30cm</td></tr>
+        <tr><td>染色堅ろう度</td><td>ウェットクリーニング</td><td>-</td><td>JIS K6552</td><td>-</td><td>¥5,400</td><td>各20cm×30cm</td></tr>
+        <tr><td>染色堅ろう度</td><td>水</td><td>-</td><td>JIS L0846</td><td>ISO 105E-01</td><td>¥4,200</td><td>各15cm×15cm</td></tr>
+        <tr><td>染色堅ろう度</td><td>汗（アルカリ汗・酸性汗）</td><td>-</td><td>JIS K6560／JIS L0848</td><td>ISO 11641／ISO 105E-04</td><td>¥4,400</td><td>各15cm×15cm</td></tr>
+        <tr><td>色移行性</td><td>-</td><td>-</td><td>-</td><td>ISO 15701</td><td>¥4,620</td><td>10cm×10cm</td></tr>
+        <tr><td>耐光性</td><td>カーボンアーク式</td><td>12時間以内</td><td>JIS L0842</td><td>-</td><td>¥6,000</td><td>各10cm×15cm</td></tr>
+        <tr><td>耐光性</td><td>カーボンアーク式</td><td>12時間以内・2枚目以降</td><td>JIS L0842</td><td>-</td><td>¥3,000</td><td>各10cm×15cm</td></tr>
+        <tr><td>耐光性</td><td>カーボンアーク式</td><td>24時間以内</td><td>JIS L0842</td><td>-</td><td>¥9,600</td><td>各10cm×15cm</td></tr>
+        <tr><td>耐光性</td><td>カーボンアーク式</td><td>24時間以内・2枚目以降</td><td>JIS L0842</td><td>-</td><td>¥4,800</td><td>各10cm×15cm</td></tr>
+        <tr><td>耐光性</td><td>カーボンアーク式</td><td>上記＋10時間毎</td><td>JIS L0842</td><td>-</td><td>¥2,400</td><td>各10cm×15cm</td></tr>
+        <tr><td>耐光性</td><td>カーボンアーク式</td><td>10時間追加・2枚目以降</td><td>JIS L0842</td><td>-</td><td>¥1,200</td><td>各10cm×15cm</td></tr>
       </tbody>
     </table>
   </div>
-  <div class="cms-note blue">管理画面の「テーブル」ブロックから行・列を追加。料金改訂時はここを更新。</div>
+  <div class="cms-note blue">クライアント提供Excel「項目一覧.xlsx」染色堅ろう度試験シートの全項目を反映。「-」はExcel側に規格番号自体の記載がない項目（学振法にISO規格なし、耐光性にISO規格なし等）。項目追加時は管理画面のテーブル機能で行を追加するだけで対応可能。</div>
 </div>
 
-<!-- ⑤ パーツ > 本文のみ（ご依頼にあたって） -->
+<!-- ⑥ パーツ > 本文のみ（評価基準） -->
 <div class="cms-block">
-  <span class="cms-label">⑤ パーツ &gt; 本文のみ（ご依頼にあたって）</span>
+  <span class="cms-label">⑥ パーツ &gt; 本文のみ（評価基準）</span>
+  <div class="lensa-text-block">
+    <div class="lensa-sec-ttl">評価基準</div>
+    <p>各試験項目の評価基準・判定方法（グレースケールによる級判定等）の詳細は、試験項目決定後に追加します。</p>
+  </div>
+  <div class="cms-note blue">【仮テキスト】boken.or.jp同様、評価基準の参照先（規格表等）をここに掲載する想定。</div>
+</div>
+
+<!-- ⑦ パーツ > 本文のみ（ご依頼にあたって） -->
+<div class="cms-block">
+  <span class="cms-label">⑦ パーツ &gt; 本文のみ（ご依頼にあたって）</span>
   <div class="lensa-text-block">
     <p>試験のご依頼にあたっては、試料サイズや試験方法の詳細についてご不明な点がある場合は、事前にお問い合わせください。複数試験の同時依頼も可能です。</p>
   </div>
   <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ⑥ パーツ > 重要なお知らせ（CTA） -->
+<!-- ⑧ パーツ > 重要なお知らせ（CTA） -->
 <div class="cms-block">
-  <span class="cms-label">⑥ パーツ &gt; 重要なお知らせ（CTA）</span>
+  <span class="cms-label">⑧ パーツ &gt; 重要なお知らせ（CTA）</span>
   <div class="lensa-notice">
     <div class="lensa-notice-text">分析依頼・お見積のご相談はお気軽にお問い合わせください</div>
     <a class="lensa-notice-btn" href="request-flow.html">分析依頼の流れを確認する</a>
@@ -99,30 +140,31 @@
   <div class="cms-note blue">テキスト・ボタンラベル・リンク先は管理画面から変更可。</div>
 </div>
 
-<!-- ⑦ フッター（共通） -->
+<!-- ⑨ フッター（共通） -->
 <div class="cms-block shared">
-  <span class="cms-label shared">⑦ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <span class="cms-label shared">⑨ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
   <div class="lensa-footer">
     <div class="lensa-footer-grid">
       <div class="lensa-footer-col">
-        <h4>試験・分析サービス</h4>
-        <a href="leather-analysis-cms.html">皮革品質分析</a>
-        <a href="collagen.html">コラーゲン定量</a>
-        <a href="ecoleather.html">エコレザー認証検査</a>
-        <a href="peptide.html">ペプチドシークエンス</a>
-        <a href="synthetic.html">人工素材</a>
+        <h4>皮革関連分析</h4>
+        <a href="leather-physics.html">物性試験</a>
+        <a href="leather-colorfall.html">染色堅ろう度試験</a>
+        <a href="leather-waterproof.html">防水試験</a>
+        <a href="leather-chemistry.html">化学試験</a>
+        <a href="leather-others.html">動物種判別試験</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>その他の分析</h4>
+        <a href="collagen.html">コラーゲン・食品関連分析</a>
+        <a href="ecoleather.html">エコレザー認証試験</a>
+        <a href="peptide.html">N末端ペプチドシークエンス</a>
+        <a href="test-products.html">試薬製品</a>
       </div>
       <div class="lensa-footer-col">
         <h4>ご依頼について</h4>
         <a href="request-flow.html">分析依頼の流れ</a>
         <a href="faq.html">よくあるご質問</a>
         <a href="contact.html">お問い合わせ</a>
-      </div>
-      <div class="lensa-footer-col">
-        <h4>研究活動</h4>
-        <a href="research-report.html">研究事業レポート</a>
-        <a href="donation.html">寄付・協力</a>
-        <a href="quality.html">品質管理</a>
       </div>
       <div class="lensa-footer-col">
         <h4>財団について</h4>
@@ -137,7 +179,7 @@
       © 一般財団法人 日本皮革研究所
     </div>
   </div>
-  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。</div>
+  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。フッターの大項目もナビと同様に5カテゴリ構成へ再編。</div>
 </div>
 
 </div><!-- .wrap -->
