@@ -102,9 +102,31 @@
   <div class="cms-note blue">リッチテキストエディタで本文を編集。報告書利用に関する注意文はjilr.or.jp/topic/index.html掲載の規約内容を要約反映。</div>
 </div>
 
-<!-- ⑦ パーツ > 本文のみ（よくあるご質問） -->
+<!-- ⑦ パーツ > 本文のみ（依頼書ダウンロード・利用規約同意） -->
 <div class="cms-block">
-  <span class="cms-label">⑦ パーツ &gt; 本文のみ（よくあるご質問 4件）</span>
+  <span class="cms-label">⑦ パーツ &gt; 本文のみ（依頼書ダウンロード・利用規約同意）</span>
+  <div class="lensa-text-block">
+    <div class="lensa-sec-ttl">依頼書ダウンロード</div>
+    <p>分析依頼書（記入用）はこちらからダウンロードしてご使用ください。ダウンロードには利用規約への同意が必要です。</p>
+    <div class="lensa-agree-terms">
+      <strong>分析報告書のご利用に関する規約（抜粋）</strong><br>
+      ・本報告書の内容を第三者へ譲渡・転送することはできません。<br>
+      ・本報告書の内容をホームページ等へ無断掲載することはできません。<br>
+      ・内容を利用する場合は、事前に本機関の承認を得てください。<br>
+      ・内容を許可なく改変することはできません。
+    </div>
+    <label class="lensa-agree-check">
+      <input type="checkbox" id="agreeCheck" onchange="document.getElementById('dlBtn').classList.toggle('disabled', !this.checked)">
+      上記利用規約に同意する
+    </label>
+    <a id="dlBtn" class="lensa-dl-btn disabled" href="#" target="_blank">分析依頼書をダウンロード（Excel）</a>
+  </div>
+  <div class="cms-note blue">【要確認】チェックボックスによる利用規約同意フローはLENSAhubでの実装可否が未確認のため、現時点ではJSによる仮実装（フレーム変更点フィードバック対応）。実装可否確定後、CMS標準の同意ブロック機能へ置き換え。ダウンロードファイルは仮リンク（href="#"）— クライアントへ分析依頼書（記入用フォーム）の実体ファイル提供を依頼要。利用規約文はjilr.or.jp/topic/index.html掲載の内容を要約反映。</div>
+</div>
+
+<!-- ⑧ パーツ > 本文のみ（よくあるご質問） -->
+<div class="cms-block">
+  <span class="cms-label">⑧ パーツ &gt; 本文のみ（よくあるご質問 4件）</span>
   <div class="lensa-text-block">
     <div class="lensa-sec-ttl">よくあるご質問</div>
     <p><strong>Q. 依頼前に見積りは必要ですか？</strong><br>
@@ -119,9 +141,9 @@
   <div class="cms-note blue">リッチテキストエディタで本文を編集。見積りに関するFAQを先頭に追加（見積必須フロー廃止に伴う補足）。</div>
 </div>
 
-<!-- ⑧ パーツ > 重要なお知らせ（CTA） -->
+<!-- ⑨ パーツ > 重要なお知らせ（CTA） -->
 <div class="cms-block">
-  <span class="cms-label">⑧ パーツ &gt; 重要なお知らせ（CTA: お問い合わせ）</span>
+  <span class="cms-label">⑨ パーツ &gt; 重要なお知らせ（CTA: お問い合わせ）</span>
   <div class="lensa-notice">
     <div class="lensa-notice-text">分析依頼・お見積のご相談はお気軽にお問い合わせください</div>
     <a class="lensa-notice-btn red" href="contact.html">お問い合わせ</a>
@@ -129,9 +151,9 @@
   <div class="cms-note blue">テキスト・ボタンラベル・リンク先は管理画面から変更可。</div>
 </div>
 
-<!-- ⑨ フッター（共通） -->
+<!-- ⑩ フッター（共通） -->
 <div class="cms-block shared">
-  <span class="cms-label shared">⑨ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <span class="cms-label shared">⑩ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
   <div class="lensa-footer">
     <div class="lensa-footer-grid">
       <div class="lensa-footer-col">
