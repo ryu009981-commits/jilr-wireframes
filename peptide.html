@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: ペプチドシークエンス受託（LENSAhub実装版）｜ 日本皮革研究所</title>
+<title>WF: N末端ペプチドシークエンス（テンプレート展開版）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
 <link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
 
-<div class="pg-label">WF: ペプチドシークエンス受託（LENSAhub実装版）</div>
+<div class="pg-label">WF: N末端ペプチドシークエンス（テンプレート展開版 / boken.or.jp形式）</div>
 <div class="wrap">
 
 <!-- 凡例 -->
@@ -42,81 +42,66 @@
 <div class="cms-block">
   <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
   <div class="lensa-page-title">
-    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>ペプチドシークエンス受託</div>
-    <div class="lensa-h1">ペプチドシークエンス受託</div>
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>N末端ペプチドシークエンス</div>
+    <div class="lensa-h1">N末端ペプチドシークエンス</div>
   </div>
   <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
 
-<!-- ③ パーツ > 本文のみ（リード文） -->
+<!-- ③ パーツ > 本文のみ（目的） -->
 <div class="cms-block">
-  <span class="cms-label">③ パーツ &gt; 本文のみ（リード文）</span>
+  <span class="cms-label">③ パーツ &gt; 本文のみ（目的）</span>
   <div class="lensa-text-block">
-    <p>コラーゲン由来ペプチドのアミノ酸配列解析（シークエンス）を受託します。皮革素材の同定・研究用途にご活用ください。</p>
+    <div class="lensa-sec-ttl">目的</div>
+    <p>精製したタンパク質・ペプチドのアミノ酸配列を、エドマン分解法を用いN末端側から1残基ずつ順次同定します。質量分析のようにデータベースに依存しないため、配列情報が乏しいタンパク質の解析にも適しています。業界最安値水準で、高品質なペプチドシークエンスサービスをご提供しております。</p>
   </div>
-  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
+  <div class="cms-note blue">バイオ関連製品サービスパンフレットの記載をそのまま反映。リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ④ パーツ > 本文のみ（サービス概要） -->
+<!-- ④ パーツ > 本文と画像（試験方法） -->
 <div class="cms-block">
-  <span class="cms-label">④ パーツ &gt; 本文のみ（サービス概要）</span>
-  <div class="lensa-text-block">
-    <p><strong>サービス概要</strong><br>
-    LC/MS/MSを用いたペプチドのアミノ酸配列解析を受託しています。コラーゲンや皮革由来タンパク質の同定・品種判別に対応しており、食品・化粧品・医療材料の研究にもご利用いただけます。Excel形式の依頼書をご使用ください。</p>
+  <span class="cms-label">④ パーツ &gt; 本文と画像（試験方法・試験機器）</span>
+  <div class="lensa-textimg-block">
+    <div class="lensa-sec-ttl">試験方法</div>
+    <div class="lensa-textimg">
+      <div class="lensa-textimg-img">試験機器<br>写真</div>
+      <div class="lensa-textimg-body">
+        <p>PVDF膜転写試料を専用のシークエンサーに供し、エドマン分解法によりN末端から1残基ずつアミノ酸を同定します。システイン残基を含む試料は還元アルキル化処理（オプション）により検出精度を高めます。脱塩・濃縮処理（オプション）にも対応しています。</p>
+      </div>
+    </div>
   </div>
-  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
-</div>
-
-<!-- ⑤ パーツ > 本文のみ（分析フロー） -->
-<div class="cms-block">
-  <span class="cms-label">⑤ パーツ &gt; 本文のみ（分析フロー）</span>
-  <div class="lensa-text-block">
-    <p><strong>分析フロー</strong></p>
-    <p>
-      STEP1 Excel依頼書の提出・お問い合わせ<br>
-      STEP2 試料の送付（所定の方法）<br>
-      STEP3 LC/MS/MSによる分析実施<br>
-      STEP4 結果報告書の送付
-    </p>
-  </div>
-  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
+  <div class="cms-note blue">【仮テキスト】バイオ関連製品サービスパンフレットの記載をベースに作成。試験機器写真・動画を追加できる構成。画像はメディアライブラリからアップロード。</div>
 </div>
 
 <!-- ⑥ パーツ > テーブル（料金） -->
 <div class="cms-block">
-  <span class="cms-label">⑥ パーツ &gt; テーブル（料金）</span>
+  <span class="cms-label">⑥ パーツ &gt; テーブル（試験項目・料金一覧）</span>
   <div class="lensa-table-block">
-    <div class="lensa-sec-ttl">料金</div>
+    <div class="lensa-sec-ttl">試験項目・料金一覧</div>
     <table class="lensa-table">
       <thead>
-        <tr><th>区分</th><th>料金（税込）</th><th>単位</th></tr>
+        <tr><th>品目</th><th>価格（税別）</th></tr>
       </thead>
       <tbody>
-        <tr><td>基本分析（1〜5残基）</td><td>¥48,000</td><td>1検体</td></tr>
-        <tr><td>追加分析（6検体目〜）</td><td>¥4,500/検体</td><td>-</td></tr>
-        <tr><td>誘導体化による分析</td><td>¥30,000</td><td>オプション</td></tr>
-        <tr><td>ハーフ分析</td><td>¥15,000</td><td>オプション</td></tr>
+        <tr><td>ペプチドシークエンス　1検体（5残基まで）</td><td>¥48,000</td></tr>
+        <tr><td>＋1残基追加毎</td><td>¥4,500</td></tr>
+        <tr><td>システイン残基検出（還元アルキル化）</td><td>¥30,000</td></tr>
+        <tr><td>脱塩・濃縮</td><td>¥15,000</td></tr>
       </tbody>
     </table>
   </div>
-  <div class="cms-note blue">管理画面の「テーブル」ブロックから行・列を追加。料金改訂時はここを更新。</div>
+  <div class="cms-note blue">クライアント提供「ペプチドシークエンス依頼書.xlsx」および項目一覧.xlsxのN末端ペプチドシークエンスシートの全項目を反映。管理画面の「テーブル」ブロックから行・列を追加。料金改訂時はここを更新。</div>
 </div>
 
-<!-- ⑦ パーツ > 本文のみ（よくあるご質問） -->
+<!-- ⑦ パーツ > 本文のみ（依頼書ダウンロード） -->
 <div class="cms-block">
-  <span class="cms-label">⑦ パーツ &gt; 本文のみ（よくあるご質問）</span>
+  <span class="cms-label">⑦ パーツ &gt; 本文のみ（依頼書ダウンロード）</span>
   <div class="lensa-text-block">
-    <p><strong>よくあるご質問</strong></p>
-    <p>
-      Q: どのような試料に対応していますか？<br>
-      A: コラーゲン由来ペプチドを含む試料（皮革・食品・化粧品・医療材料等）に対応しています。<br><br>
-      Q: 依頼書はどこから入手できますか？<br>
-      A: お問い合わせいただくか、管理画面から最新版のExcel依頼書をダウンロードしてご使用ください。<br><br>
-      Q: 結果はどのような形式で報告されますか？<br>
-      A: アミノ酸配列・同定結果を記載した報告書を郵送またはメールでお届けします。
-    </p>
+    <p><strong>依頼書ダウンロード</strong><br>
+    N末端ペプチドシークエンス分析受託依頼書（Excel形式）はこちらからダウンロードしてご使用ください。<br>
+    <a href="#">ペプチドシークエンス依頼書（Excel）</a></p>
   </div>
-  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
+  <div class="cms-note blue">クライアント提供「ペプチドシークエンス依頼書.xlsx」を依頼書ファイルとして掲載予定。【要確認】依頼書ダウンロードに利用規約への同意を必須にする仕様（フレーム変更点フィードバックより）は、LENSAhubでの実装可否を確認中のため、現時点ではリンクのみ仮設置。</div>
 </div>
 
 <!-- ⑧ パーツ > 重要なお知らせ（CTA） -->
