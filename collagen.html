@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: コラーゲン定量（LENSAhub実装版）｜ 日本皮革研究所</title>
+<title>WF: コラーゲン・食品関連分析（テンプレート展開版）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
 <link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
 
-<div class="pg-label">WF: コラーゲン定量（LENSAhub実装版）</div>
+<div class="pg-label">WF: コラーゲン・食品関連分析（テンプレート展開版 / boken.or.jp形式）</div>
 <div class="wrap">
 
 <!-- 凡例 -->
@@ -20,18 +20,22 @@
   <span class="legend-item"><span class="legend-dot blue"></span>ページ固有ブロック</span>
 </div>
 
+<div class="cms-note orange" style="margin:12px 28px;padding:10px 14px;font-size:11px;">
+【注】旧ページ「コラーゲン定量」を新カテゴリ「コラーゲン・食品関連分析」として再構成。5大項目の②に対応。
+</div>
+
 <!-- ① ヘッダー > スタンダード（共通） -->
 <div class="cms-block shared">
   <span class="cms-label shared">① ヘッダー &gt; スタンダード（共通パーツ / サイトパーツ管理で編集）</span>
   <div class="lensa-header">
     <div class="lensa-logo">一般財団法人<br>日本皮革研究所</div>
     <nav class="lensa-gnav">
-      <a href="leather-analysis-cms.html">皮革品質分析</a>
-      <a href="collagen.html" class="on">コラーゲン定量</a>
-      <a href="ecoleather.html">エコレザー認証検査</a>
-      <a href="peptide.html">ペプチドシークエンス</a>
+      <a href="leather-analysis-cms.html">皮革関連分析</a>
+      <a href="collagen.html" class="on">コラーゲン・食品関連分析</a>
+      <a href="ecoleather.html">エコレザー認証試験</a>
+      <a href="peptide.html">N末端ペプチドシークエンス</a>
+      <a href="test-products.html">試薬製品</a>
       <a href="request-flow.html">分析依頼の流れ</a>
-      <a href="research-report.html">研究事業レポート</a>
       <a href="foundation.html">財団概要</a>
     </nav>
   </div>
@@ -42,86 +46,102 @@
 <div class="cms-block">
   <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
   <div class="lensa-page-title">
-    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>コラーゲン定量</div>
-    <div class="lensa-h1">コラーゲン定量</div>
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>コラーゲン・食品関連分析</div>
+    <div class="lensa-h1">コラーゲン・食品関連分析</div>
   </div>
   <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
 
-<!-- ③ パーツ > 本文のみ（リード文） -->
+<!-- ③ パーツ > 本文のみ（目的） -->
 <div class="cms-block">
-  <span class="cms-label">③ パーツ &gt; 本文のみ（リード文）</span>
+  <span class="cms-label">③ パーツ &gt; 本文のみ（目的）</span>
   <div class="lensa-text-block">
-    <p>コラーゲンはヒドロキシプロリンを多く含むタンパク質です。皮革・食品・化粧品・医療材料など幅広い分野でのコラーゲン定量分析を承っています。</p>
+    <div class="lensa-sec-ttl">目的</div>
+    <p>コラーゲンはヒドロキシプロリンを特異的に多く含むタンパク質です。皮革・食品・サプリメント・化粧品など幅広い分野でのコラーゲン定量分析に加え、食品栄養成分分析・アミノ酸分析にも対応しています。</p>
   </div>
-  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
+  <div class="cms-note blue">【仮テキスト】既存コンテンツをベースに作成。リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ④ パーツ > 本文のみ（コラーゲン定量とは） -->
+<!-- ④ パーツ > 本文と画像（試験方法） -->
 <div class="cms-block">
-  <span class="cms-label">④ パーツ &gt; 本文のみ（コラーゲン定量とは）</span>
-  <div class="lensa-text-block">
-    <p><strong>コラーゲン定量とは</strong><br>
-    コラーゲンはヒドロキシプロリン（Hyp）を特異的に多量に含むタンパク質であり、ヒドロキシプロリン含量を測定することでコラーゲン量を定量します。皮革のコラーゲン含量は品質指標として活用されるほか、食品・サプリメント・化粧品のコラーゲン表示の根拠としても使用されます。アミノ酸分析（HPLC法）によるより詳細な組成分析も対応しています。</p>
-  </div>
-  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
-</div>
-
-<!-- ⑤ パーツ > テーブル（料金一覧） -->
-<div class="cms-block">
-  <span class="cms-label">⑤ パーツ &gt; テーブル（料金一覧）</span>
-  <div class="lensa-table-block">
-    <div class="lensa-sec-ttl">料金一覧</div>
-    <table class="lensa-table">
-      <thead>
-        <tr><th>分析項目</th><th>料金（税込）</th><th>試料量</th><th>備考</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>コラーゲン定量（ヒドロキシプロリン法）</td><td>¥21,600</td><td>30g</td><td>-</td></tr>
-        <tr><td>アミノ酸分析（18種）</td><td>¥40,000</td><td>30g</td><td>-</td></tr>
-        <tr><td>アミノ酸分析（19種・トリプトファン含む）</td><td>¥53,000</td><td>30g</td><td>-</td></tr>
-        <tr><td>ヒドロキシプロリン単独測定</td><td>¥18,000</td><td>-</td><td>-</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="cms-note blue">管理画面の「テーブル」ブロックから行・列を追加。料金改訂時はここを更新。</div>
-</div>
-
-<!-- ⑥ ページコンテンツ > 縦型カードシャドウあり（3カラム）「対応試料」 -->
-<div class="cms-block">
-  <span class="cms-label">⑥ ページコンテンツ &gt; 縦型カードシャドウあり（3カラム）「対応試料」</span>
-  <div class="lensa-card-section">
-    <div class="lensa-sec-ttl">対応試料</div>
-    <div class="lensa-cards-3">
-      <div class="lensa-card">
-        <div class="lensa-card-img">サムネイル画像</div>
-        <div class="lensa-card-body">
-          <div class="lensa-card-title">皮革・革製品</div>
-          <div class="lensa-card-text">コラーゲン含量の品質確認・製品規格対応に活用できます。</div>
-        </div>
-      </div>
-      <div class="lensa-card">
-        <div class="lensa-card-img">サムネイル画像</div>
-        <div class="lensa-card-body">
-          <div class="lensa-card-title">食品・サプリメント</div>
-          <div class="lensa-card-text">コラーゲン飲料・スープ・健康食品のコラーゲン量確認に対応します。</div>
-        </div>
-      </div>
-      <div class="lensa-card">
-        <div class="lensa-card-img">サムネイル画像</div>
-        <div class="lensa-card-body">
-          <div class="lensa-card-title">化粧品・医療材料</div>
-          <div class="lensa-card-text">コラーゲン配合製品の含量分析を行います。</div>
-        </div>
+  <span class="cms-label">④ パーツ &gt; 本文と画像（試験方法・試験機器）</span>
+  <div class="lensa-textimg-block">
+    <div class="lensa-sec-ttl">試験方法</div>
+    <div class="lensa-textimg">
+      <div class="lensa-textimg-img">試験機器<br>写真</div>
+      <div class="lensa-textimg-body">
+        <p>コラーゲン・ヒドロキシプロリンの定量は比色法またはアミノ酸分析法で測定します。コラーゲン由来オリゴペプチドの定量はLC-MS/MS、分子量測定はHPLCで実施します。食品栄養成分・アミノ酸分析も同一サンプルで対応可能です。</p>
       </div>
     </div>
   </div>
-  <div class="cms-note blue">タイトル・本文・リンクを管理画面から編集。画像はメディアライブラリからアップロード。</div>
+  <div class="cms-note blue">【仮テキスト】試験項目ごとに試験機器写真・動画・試験結果例（boken.or.jp形式）を追加できる構成。画像はメディアライブラリからアップロード。</div>
 </div>
 
-<!-- ⑦ パーツ > 重要なお知らせ（CTA） -->
+<!-- ⑤ パーツ > テーブル（コラーゲンの定量・料金一覧） -->
 <div class="cms-block">
-  <span class="cms-label">⑦ パーツ &gt; 重要なお知らせ（CTA）</span>
+  <span class="cms-label">⑤ パーツ &gt; テーブル（コラーゲンの定量・料金一覧／拡張可能）</span>
+  <div class="lensa-table-block">
+    <div class="lensa-sec-ttl">コラーゲンの定量</div>
+    <table class="lensa-table">
+      <thead>
+        <tr><th>試験項目</th><th>試験方法</th><th>料金（税別）</th><th>必要な試料量</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>コラーゲンの定量</td><td>比色法</td><td>¥21,600</td><td>30g</td></tr>
+        <tr><td>コラーゲンの定量</td><td>アミノ酸分析法</td><td>¥40,000</td><td>30g</td></tr>
+        <tr><td>ヒドロキシプロリン(Hyp)の定量</td><td>比色法</td><td>¥18,000</td><td>30g</td></tr>
+        <tr><td>ヒドロキシプロリン(Hyp)の定量</td><td>アミノ酸分析法</td><td>¥40,000</td><td>30g</td></tr>
+        <tr><td>コラーゲン由来オリゴペプチドの定量</td><td>LC-MS/MS</td><td>¥80,000</td><td>5g</td></tr>
+        <tr><td>コラーゲンペプチドの分子量測定</td><td>HPLC</td><td>¥70,000</td><td>5g</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cms-note blue">クライアント提供Excel「項目一覧.xlsx」コラーゲン・食品関連シートを反映。項目追加時は管理画面のテーブル機能で行を追加するだけで対応可能。</div>
+</div>
+
+<!-- ⑥ パーツ > テーブル（食品栄養成分分析・料金一覧） -->
+<div class="cms-block">
+  <span class="cms-label">⑥ パーツ &gt; テーブル（食品栄養成分分析・料金一覧）</span>
+  <div class="lensa-table-block">
+    <div class="lensa-sec-ttl">食品栄養成分分析</div>
+    <table class="lensa-table">
+      <thead>
+        <tr><th>試験項目</th><th>試験方法</th><th>料金（税別）</th><th>必要な試料量</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>水分</td><td>常圧加熱法</td><td>¥3,000</td><td>30g</td></tr>
+        <tr><td>たんぱく質</td><td>ケルダール法</td><td>¥10,000</td><td>30g</td></tr>
+        <tr><td>脂肪</td><td>ソックスレー抽出法</td><td>¥4,500</td><td>30g</td></tr>
+        <tr><td>炭水化物</td><td>直接灰化法</td><td>¥4,500</td><td>30g</td></tr>
+        <tr><td>食塩相当量（ナトリウム）</td><td>ICP-OES</td><td>¥8,400</td><td>30g</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cms-note blue">クライアント提供Excelの食品栄養成分分析シートを反映。</div>
+</div>
+
+<!-- ⑦ パーツ > テーブル（アミノ酸分析・料金一覧） -->
+<div class="cms-block">
+  <span class="cms-label">⑦ パーツ &gt; テーブル（アミノ酸分析・料金一覧）</span>
+  <div class="lensa-table-block">
+    <div class="lensa-sec-ttl">アミノ酸分析</div>
+    <table class="lensa-table">
+      <thead>
+        <tr><th>試験項目</th><th>分析成分</th><th>料金（税別）</th><th>必要な試料量</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>18種アミノ酸分析</td><td>Hyp Asp Thr Ser Glu Pro Gly Ala (Cys) Val (Met) Ile Leu Tyr Phe Lys His Arg</td><td>¥40,000</td><td>10g</td></tr>
+        <tr><td>19種アミノ酸分析</td><td>Hyp Asp Thr Ser Glu Pro Gly Ala Cys Val Met Ile Leu Tyr Phe Lys His Arg Trp</td><td>¥53,000</td><td>10g</td></tr>
+      </tbody>
+    </table>
+    <p class="lensa-table-note">※18種ではCys, Metは正確に定量できません。※アスパラギン酸はアスパラギンを含みます。※グルタミン酸はグルタミンを含みます。</p>
+  </div>
+  <div class="cms-note blue">クライアント提供Excelのアミノ酸分析シートを反映（注記含む）。</div>
+</div>
+
+<!-- ⑧ パーツ > 重要なお知らせ（CTA） -->
+<div class="cms-block">
+  <span class="cms-label">⑧ パーツ &gt; 重要なお知らせ（CTA）</span>
   <div class="lensa-notice">
     <div class="lensa-notice-text">分析依頼・お見積のご相談はお気軽にお問い合わせください</div>
     <a class="lensa-notice-btn" href="request-flow.html">分析依頼の流れを確認する</a>
@@ -130,30 +150,31 @@
   <div class="cms-note blue">テキスト・ボタンラベル・リンク先は管理画面から変更可。</div>
 </div>
 
-<!-- ⑧ フッター（共通） -->
+<!-- ⑨ フッター（共通） -->
 <div class="cms-block shared">
-  <span class="cms-label shared">⑧ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <span class="cms-label shared">⑨ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
   <div class="lensa-footer">
     <div class="lensa-footer-grid">
       <div class="lensa-footer-col">
-        <h4>試験・分析サービス</h4>
-        <a href="leather-analysis-cms.html">皮革品質分析</a>
-        <a href="collagen.html">コラーゲン定量</a>
-        <a href="ecoleather.html">エコレザー認証検査</a>
-        <a href="peptide.html">ペプチドシークエンス</a>
-        <a href="synthetic.html">人工素材</a>
+        <h4>皮革関連分析</h4>
+        <a href="leather-physics.html">物性試験</a>
+        <a href="leather-colorfall.html">染色堅ろう度試験</a>
+        <a href="leather-waterproof.html">防水試験</a>
+        <a href="leather-chemistry.html">化学試験</a>
+        <a href="leather-others.html">動物種判別試験</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>その他の分析</h4>
+        <a href="collagen.html">コラーゲン・食品関連分析</a>
+        <a href="ecoleather.html">エコレザー認証試験</a>
+        <a href="peptide.html">N末端ペプチドシークエンス</a>
+        <a href="test-products.html">試薬製品</a>
       </div>
       <div class="lensa-footer-col">
         <h4>ご依頼について</h4>
         <a href="request-flow.html">分析依頼の流れ</a>
         <a href="faq.html">よくあるご質問</a>
         <a href="contact.html">お問い合わせ</a>
-      </div>
-      <div class="lensa-footer-col">
-        <h4>研究活動</h4>
-        <a href="research-report.html">研究事業レポート</a>
-        <a href="donation.html">寄付・協力</a>
-        <a href="quality.html">品質管理</a>
       </div>
       <div class="lensa-footer-col">
         <h4>財団について</h4>
@@ -168,7 +189,7 @@
       © 一般財団法人 日本皮革研究所
     </div>
   </div>
-  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。</div>
+  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。フッターの大項目もナビと同様に5カテゴリ構成へ再編。</div>
 </div>
 
 </div><!-- .wrap -->
