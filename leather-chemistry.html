@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: 皮革化学（LENSAhub実装版）｜ 日本皮革研究所</title>
+<title>WF: 化学試験（テンプレート展開版）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
 <link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
 
-<div class="pg-label">WF: 皮革化学（LENSAhub実装版）</div>
+<div class="pg-label">WF: 化学試験（テンプレート展開版 / boken.or.jp形式）</div>
 <div class="wrap">
 
 <!-- 凡例 -->
@@ -26,12 +26,12 @@
   <div class="lensa-header">
     <div class="lensa-logo">一般財団法人<br>日本皮革研究所</div>
     <nav class="lensa-gnav">
-      <a href="leather-analysis-cms.html" class="on">皮革品質分析</a>
-      <a href="collagen.html">コラーゲン定量</a>
-      <a href="ecoleather.html">エコレザー認証検査</a>
-      <a href="peptide.html">ペプチドシークエンス</a>
+      <a href="leather-analysis-cms.html" class="on">皮革関連分析</a>
+      <a href="collagen.html">コラーゲン・食品関連分析</a>
+      <a href="ecoleather.html">エコレザー認証試験</a>
+      <a href="peptide.html">N末端ペプチドシークエンス</a>
+      <a href="test-products.html">試薬製品</a>
       <a href="request-flow.html">分析依頼の流れ</a>
-      <a href="research-report.html">研究事業レポート</a>
       <a href="foundation.html">財団概要</a>
     </nav>
   </div>
@@ -42,55 +42,87 @@
 <div class="cms-block">
   <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
   <div class="lensa-page-title">
-    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>皮革品質分析<span>›</span>皮革化学</div>
-    <div class="lensa-h1">皮革化学</div>
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span><a href="leather-analysis-cms.html">皮革関連分析</a><span>›</span>化学試験</div>
+    <div class="lensa-h1">化学試験</div>
   </div>
   <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
 
-<!-- ③ パーツ > 本文のみ（リード文） -->
+<!-- ③ パーツ > 本文のみ（目的） -->
 <div class="cms-block">
-  <span class="cms-label">③ パーツ &gt; 本文のみ（リード文）</span>
+  <span class="cms-label">③ パーツ &gt; 本文のみ（目的）</span>
   <div class="lensa-text-block">
-    <p>タンパク質・アミノ酸・脂肪分・クロム含量・灰分・pHなど、皮革の化学的特性を分析します。各種法規制対応にもご活用いただけます。</p>
+    <div class="lensa-sec-ttl">目的</div>
+    <p>皮革に含まれる水分・脂肪分・クロム含有量・pH・なめし度など化学的特性を各種JIS・ISO規格に基づき測定し、皮革製品の品質評価・規格適合確認に役立てます。</p>
   </div>
-  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
+  <div class="cms-note blue">【仮テキスト】試験概要パンフレットの記載をベースに作成。リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ④ パーツ > テーブル（試験項目・料金一覧） -->
+<!-- ④ パーツ > 本文と画像（試験方法） -->
 <div class="cms-block">
-  <span class="cms-label">④ パーツ &gt; テーブル（試験項目・料金一覧）</span>
+  <span class="cms-label">④ パーツ &gt; 本文と画像（試験方法・試験機器）</span>
+  <div class="lensa-textimg-block">
+    <div class="lensa-sec-ttl">試験方法</div>
+    <div class="lensa-textimg">
+      <div class="lensa-textimg-img">試験機器<br>写真</div>
+      <div class="lensa-textimg-body">
+        <p>揮発性物質（水分）・全灰分・脂肪分・皮質分・酸化クロム含有量・pH・水溶性物質・なめし度など、皮革の化学的特性をJIS・ISO規格に基づく専用機器・分析手法で測定します。試験項目ごとの詳細な手順は追加予定です。</p>
+      </div>
+    </div>
+  </div>
+  <div class="cms-note blue">【仮テキスト】試験項目ごとに試験機器写真・動画・試験結果例（boken.or.jp形式）を追加できる構成。画像はメディアライブラリからアップロード。</div>
+</div>
+
+<!-- ⑤ パーツ > テーブル（試験項目・料金一覧） -->
+<div class="cms-block">
+  <span class="cms-label">⑤ パーツ &gt; テーブル（試験項目・料金一覧／拡張可能）</span>
   <div class="lensa-table-block">
     <div class="lensa-sec-ttl">試験項目・料金一覧</div>
     <table class="lensa-table">
       <thead>
-        <tr><th>試験項目</th><th>試験方法・規格</th><th>料金（税込）</th><th>試料量</th></tr>
+        <tr><th>試験項目</th><th>条件</th><th>試験方法（JIS）</th><th>試験方法（ISO）</th><th>料金（税別）</th><th>必要量</th></tr>
       </thead>
       <tbody>
-        <tr><td>タンパク質含量</td><td>ケルダール法</td><td>¥3,000</td><td>10g</td></tr>
-        <tr><td>アミノ酸分析</td><td>HPLC法</td><td>¥4,500</td><td>30g</td></tr>
-        <tr><td>脂肪分</td><td>ソックスレー抽出法</td><td>¥4,500</td><td>10g</td></tr>
-        <tr><td>クロム含量</td><td>ICP-AES法</td><td>¥10,000</td><td>10g</td></tr>
-        <tr><td>灰分</td><td>灰化法</td><td>¥10,000</td><td>10g</td></tr>
-        <tr><td>pH測定</td><td>ガラス電極法</td><td>¥1,500</td><td>10g</td></tr>
+        <tr><td>揮発性物質（水分）</td><td>-</td><td>JIS K6558-2</td><td>ISO 4684</td><td>¥3,000</td><td>10g</td></tr>
+        <tr><td>全灰分</td><td>-</td><td>JIS K6558-3</td><td>ISO 4047</td><td>¥4,500</td><td>10g</td></tr>
+        <tr><td>ジクロロメタン又はヘキサン可溶性物質（脂肪分）</td><td>-</td><td>JIS K6558-4</td><td>ISO 4048</td><td>¥4,500</td><td>30g</td></tr>
+        <tr><td>皮質分</td><td>-</td><td>JIS K6558-6</td><td>ISO 5397</td><td>¥10,000</td><td>10g</td></tr>
+        <tr><td>酸化クロム含有量</td><td>滴定法（予想含有量0.1%以上）</td><td>JIS K6558-8-1</td><td>ISO 5398-1</td><td>¥10,000</td><td>20g</td></tr>
+        <tr><td>酸化クロム含有量</td><td>比色法（予想含有量0.05%以上）</td><td>JIS K6558-8-2</td><td>ISO 5398-2</td><td>¥10,000</td><td>20g</td></tr>
+        <tr><td>酸化クロム含有量</td><td>ICP発光分析（予想含有量1mg/kg以上）</td><td>JIS K6558-8-4</td><td>ISO 5398-4</td><td>¥8,400</td><td>15g</td></tr>
+        <tr><td>pH</td><td>-</td><td>JIS K6558-9</td><td>ISO 4045</td><td>¥1,500</td><td>15g</td></tr>
+        <tr><td>水溶性物質</td><td>-</td><td>JIS K6558-5</td><td>ISO 4098</td><td>¥5,000</td><td>30g</td></tr>
+        <tr><td>水溶性無機物</td><td>水溶性物質と一緒に行う場合</td><td>JIS K6558-5</td><td>ISO 4098</td><td>¥4,500</td><td>30g</td></tr>
+        <tr><td>硫酸化不溶性灰分</td><td>-</td><td>JIS K6558-3</td><td>ISO 4047</td><td>¥7,000</td><td>10g</td></tr>
+        <tr><td>なめし度</td><td>-</td><td>JIS K6558-7</td><td>-</td><td>要相談</td><td>200g</td></tr>
       </tbody>
     </table>
   </div>
-  <div class="cms-note blue">管理画面の「テーブル」ブロックから行・列を追加。料金改訂時はここを更新。</div>
+  <div class="cms-note blue">クライアント提供Excel「項目一覧.xlsx」化学試験シートの全項目を反映。「-」はExcel側に規格番号自体の記載がない項目（なめし度にISO規格なし等）。項目追加時は管理画面のテーブル機能で行を追加するだけで対応可能。</div>
 </div>
 
-<!-- ⑤ パーツ > 本文のみ（ご依頼にあたって） -->
+<!-- ⑥ パーツ > 本文のみ（評価基準） -->
 <div class="cms-block">
-  <span class="cms-label">⑤ パーツ &gt; 本文のみ（ご依頼にあたって）</span>
+  <span class="cms-label">⑥ パーツ &gt; 本文のみ（評価基準）</span>
+  <div class="lensa-text-block">
+    <div class="lensa-sec-ttl">評価基準</div>
+    <p>各試験項目の評価基準・判定方法の詳細は、試験項目決定後に追加します。</p>
+  </div>
+  <div class="cms-note blue">【仮テキスト】boken.or.jp同様、評価基準の参照先（規格表等）をここに掲載する想定。</div>
+</div>
+
+<!-- ⑦ パーツ > 本文のみ（ご依頼にあたって） -->
+<div class="cms-block">
+  <span class="cms-label">⑦ パーツ &gt; 本文のみ（ご依頼にあたって）</span>
   <div class="lensa-text-block">
     <p>試験のご依頼にあたっては、試料量や分析方法の詳細についてご不明な点がある場合は、事前にお問い合わせください。複数項目の同時依頼も可能です。</p>
   </div>
   <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ⑥ パーツ > 重要なお知らせ（CTA） -->
+<!-- ⑧ パーツ > 重要なお知らせ（CTA） -->
 <div class="cms-block">
-  <span class="cms-label">⑥ パーツ &gt; 重要なお知らせ（CTA）</span>
+  <span class="cms-label">⑧ パーツ &gt; 重要なお知らせ（CTA）</span>
   <div class="lensa-notice">
     <div class="lensa-notice-text">分析依頼・お見積のご相談はお気軽にお問い合わせください</div>
     <a class="lensa-notice-btn" href="request-flow.html">分析依頼の流れを確認する</a>
@@ -99,30 +131,31 @@
   <div class="cms-note blue">テキスト・ボタンラベル・リンク先は管理画面から変更可。</div>
 </div>
 
-<!-- ⑦ フッター（共通） -->
+<!-- ⑨ フッター（共通） -->
 <div class="cms-block shared">
-  <span class="cms-label shared">⑦ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <span class="cms-label shared">⑨ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
   <div class="lensa-footer">
     <div class="lensa-footer-grid">
       <div class="lensa-footer-col">
-        <h4>試験・分析サービス</h4>
-        <a href="leather-analysis-cms.html">皮革品質分析</a>
-        <a href="collagen.html">コラーゲン定量</a>
-        <a href="ecoleather.html">エコレザー認証検査</a>
-        <a href="peptide.html">ペプチドシークエンス</a>
-        <a href="synthetic.html">人工素材</a>
+        <h4>皮革関連分析</h4>
+        <a href="leather-physics.html">物性試験</a>
+        <a href="leather-colorfall.html">染色堅ろう度試験</a>
+        <a href="leather-waterproof.html">防水試験</a>
+        <a href="leather-chemistry.html">化学試験</a>
+        <a href="leather-others.html">動物種判別試験</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>その他の分析</h4>
+        <a href="collagen.html">コラーゲン・食品関連分析</a>
+        <a href="ecoleather.html">エコレザー認証試験</a>
+        <a href="peptide.html">N末端ペプチドシークエンス</a>
+        <a href="test-products.html">試薬製品</a>
       </div>
       <div class="lensa-footer-col">
         <h4>ご依頼について</h4>
         <a href="request-flow.html">分析依頼の流れ</a>
         <a href="faq.html">よくあるご質問</a>
         <a href="contact.html">お問い合わせ</a>
-      </div>
-      <div class="lensa-footer-col">
-        <h4>研究活動</h4>
-        <a href="research-report.html">研究事業レポート</a>
-        <a href="donation.html">寄付・協力</a>
-        <a href="quality.html">品質管理</a>
       </div>
       <div class="lensa-footer-col">
         <h4>財団について</h4>
@@ -137,7 +170,7 @@
       © 一般財団法人 日本皮革研究所
     </div>
   </div>
-  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。</div>
+  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。フッターの大項目もナビと同様に5カテゴリ構成へ再編。</div>
 </div>
 
 </div><!-- .wrap -->

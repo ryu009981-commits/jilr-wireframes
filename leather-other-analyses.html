@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: その他の分析（規制物質等）（LENSAhub実装版）｜ 日本皮革研究所</title>
+<title>WF: 有害物質試験（テンプレート展開版）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
 <link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
 
-<div class="pg-label">WF: その他の分析（規制物質等）（LENSAhub実装版）</div>
+<div class="pg-label">WF: 有害物質試験（テンプレート展開版 / boken.or.jp形式）</div>
 <div class="wrap">
 
 <!-- 凡例 -->
@@ -20,18 +20,22 @@
   <span class="legend-item"><span class="legend-dot blue"></span>ページ固有ブロック</span>
 </div>
 
+<div class="cms-note orange" style="margin:12px 28px;padding:10px 14px;font-size:11px;">
+【注】旧ページ「その他の分析（規制物質等）」を新カテゴリ「有害物質試験」として再構成。URLファイル名（leather-other-analyses.html）は維持。
+</div>
+
 <!-- ① ヘッダー > スタンダード（共通） -->
 <div class="cms-block shared">
   <span class="cms-label shared">① ヘッダー &gt; スタンダード（共通パーツ / サイトパーツ管理で編集）</span>
   <div class="lensa-header">
     <div class="lensa-logo">一般財団法人<br>日本皮革研究所</div>
     <nav class="lensa-gnav">
-      <a href="leather-analysis-cms.html" class="on">皮革品質分析</a>
-      <a href="collagen.html">コラーゲン定量</a>
-      <a href="ecoleather.html">エコレザー認証検査</a>
-      <a href="peptide.html">ペプチドシークエンス</a>
+      <a href="leather-analysis-cms.html" class="on">皮革関連分析</a>
+      <a href="collagen.html">コラーゲン・食品関連分析</a>
+      <a href="ecoleather.html">エコレザー認証試験</a>
+      <a href="peptide.html">N末端ペプチドシークエンス</a>
+      <a href="test-products.html">試薬製品</a>
       <a href="request-flow.html">分析依頼の流れ</a>
-      <a href="research-report.html">研究事業レポート</a>
       <a href="foundation.html">財団概要</a>
     </nav>
   </div>
@@ -42,56 +46,96 @@
 <div class="cms-block">
   <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
   <div class="lensa-page-title">
-    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>皮革品質分析<span>›</span>その他の分析（規制物質等）</div>
-    <div class="lensa-h1">その他の分析（規制物質等）</div>
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span><a href="leather-analysis-cms.html">皮革関連分析</a><span>›</span>有害物質試験</div>
+    <div class="lensa-h1">有害物質試験</div>
   </div>
   <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
 
-<!-- ③ パーツ > 本文のみ（リード文） -->
+<!-- ③ パーツ > 本文のみ（目的） -->
 <div class="cms-block">
-  <span class="cms-label">③ パーツ &gt; 本文のみ（リード文）</span>
+  <span class="cms-label">③ パーツ &gt; 本文のみ（目的）</span>
   <div class="lensa-text-block">
-    <p>フタル酸化合物・アゾ染料・ビスフェノール・PFOA/PFOSなど規制物質の分析に対応しています。規制の改正に合わせて随時対応範囲を更新しています。</p>
+    <div class="lensa-sec-ttl">目的</div>
+    <p>6価クロム・重金属・ホルムアルデヒド・特定芳香族アミン・PFAS・フタル酸エステル類など、皮革に含まれる有害化学物質を各種ISO・JIS規格に基づき分析し、規制対応・安全性評価に役立てます。</p>
   </div>
-  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
+  <div class="cms-note blue">【仮テキスト】試験概要パンフレットの記載をベースに作成。リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ④ パーツ > テーブル（試験項目・料金一覧） -->
+<!-- ④ パーツ > 本文と画像（試験方法） -->
 <div class="cms-block">
-  <span class="cms-label">④ パーツ &gt; テーブル（分析項目・料金一覧）</span>
+  <span class="cms-label">④ パーツ &gt; 本文と画像（試験方法・試験機器）</span>
+  <div class="lensa-textimg-block">
+    <div class="lensa-sec-ttl">試験方法</div>
+    <div class="lensa-textimg">
+      <div class="lensa-textimg-img">試験機器<br>写真</div>
+      <div class="lensa-textimg-body">
+        <p>規制物質ごとにISO規格に基づく専用の分析機器（クロマトグラフィー、ICP発光分析等）を用いて測定します。規制の改正に合わせて随時対応範囲を更新しています。</p>
+      </div>
+    </div>
+  </div>
+  <div class="cms-note blue">【仮テキスト】試験項目ごとに試験機器写真・動画・試験結果例（boken.or.jp形式）を追加できる構成。画像はメディアライブラリからアップロード。</div>
+</div>
+
+<!-- ⑤ パーツ > テーブル（試験項目・料金一覧） -->
+<div class="cms-block">
+  <span class="cms-label">⑤ パーツ &gt; テーブル（試験項目・料金一覧／拡張可能）</span>
   <div class="lensa-table-block">
-    <div class="lensa-sec-ttl">分析項目・料金一覧</div>
+    <div class="lensa-sec-ttl">試験項目・料金一覧</div>
     <table class="lensa-table">
       <thead>
-        <tr><th>分析項目</th><th>試験規格</th><th>料金（税込）</th><th>試料量</th></tr>
+        <tr><th>試験項目</th><th>試験方法（JIS）</th><th>試験方法（ISO等）</th><th>料金（税別）</th><th>必要量</th></tr>
       </thead>
       <tbody>
-        <tr><td>六方向しわ試験</td><td>-</td><td>¥5,400〜</td><td>-</td></tr>
-        <tr><td>フタル酸化合物</td><td>-</td><td>¥18,000〜</td><td>5g</td></tr>
-        <tr><td>特定芳香族アミン（アゾ染料）</td><td>ISO 17234 等</td><td>¥26,400</td><td>5g</td></tr>
-        <tr><td>フェノール類</td><td>-</td><td>¥18,000〜</td><td>5g</td></tr>
-        <tr><td>抗菌剤（TCS等）</td><td>-</td><td>¥18,000〜</td><td>5g</td></tr>
-        <tr><td>PFOA・PFOS（有機フッ素化合物）</td><td>-</td><td>¥36,000</td><td>5g</td></tr>
-        <tr><td>ビスフェノール類</td><td>-</td><td>¥18,000〜</td><td>5g</td></tr>
+        <tr><td>6価クロム（比色法）</td><td>JIS K6558-10-1</td><td>ISO 17075-1</td><td>¥8,400</td><td>10g</td></tr>
+        <tr><td>6価クロム（クロマト法）</td><td>JIS K6558-10-2</td><td>ISO 17075-2</td><td>¥8,400</td><td>10g</td></tr>
+        <tr><td>6価クロム（加熱あり／60℃または80℃）</td><td>JIS K6558-10-3</td><td>ISO 10195</td><td>追加¥1,200</td><td>-</td></tr>
+        <tr><td>6価クロム（比色法／ISO/IEC 17025:2017認定報告書発行）</td><td>JIS K6558-10-1</td><td>ISO 17075-1</td><td>¥18,400</td><td>10g</td></tr>
+        <tr><td>重金属含有量</td><td>-</td><td>ISO 17072-2</td><td>¥8,400</td><td>10g</td></tr>
+        <tr><td>重金属溶出量</td><td>-</td><td>ISO 17072-1</td><td>¥7,000</td><td>10g</td></tr>
+        <tr><td>ホルムアルデヒド</td><td>JIS L1041</td><td>厚生省令第34号 アセチルアセトン法</td><td>¥5,400</td><td>10g</td></tr>
+        <tr><td>特定芳香族アミン</td><td>-</td><td>ISO 17234-1／ISO 17234-2</td><td>¥19,800</td><td>10g</td></tr>
+        <tr><td>ノニルフェノール</td><td>-</td><td>ISO 18218-1</td><td>¥26,400</td><td>10g</td></tr>
+        <tr><td>オクチルフェノール</td><td>-</td><td>ISO 18218-1</td><td>¥26,400</td><td>10g</td></tr>
+        <tr><td>ノニルフェノールエトキシレート</td><td>-</td><td>ISO 18218-2</td><td>¥26,400</td><td>10g</td></tr>
+        <tr><td>オクチルフェノールエトキシレート</td><td>-</td><td>ISO 18218-2</td><td>¥26,400</td><td>10g</td></tr>
+        <tr><td>ペンタクロロフェノール</td><td>-</td><td>ISO 17072</td><td>¥26,400</td><td>10g</td></tr>
+        <tr><td>トリクロロフェノール</td><td>-</td><td>ISO 17072</td><td>¥26,400</td><td>10g</td></tr>
+        <tr><td>フタル酸エステル類</td><td>-</td><td>ISO 16181-1</td><td>¥19,800</td><td>10g</td></tr>
+        <tr><td>フマル酸ジメチル</td><td>-</td><td>ISO 16186</td><td>¥19,800</td><td>10g</td></tr>
+        <tr><td>多環芳香族炭化水素</td><td>-</td><td>ISO 16190</td><td>¥19,800</td><td>10g</td></tr>
+        <tr><td>短鎖塩素化パラフィン</td><td>-</td><td>ISO 18219-1</td><td>¥26,400</td><td>10g</td></tr>
+        <tr><td>ビスフェノール類（A,AF,B,F,S）</td><td>-</td><td>ISO 11936</td><td>2項目まで¥30,000／3項目以上¥36,000</td><td>10g</td></tr>
+        <tr><td>防腐剤（PCMC,OPP,OIT,TCMTB）一斉分析</td><td>-</td><td>ISO 13365-1</td><td>¥26,400</td><td>10g</td></tr>
+        <tr><td>PFAS（PFOA,PFOS,PFHXs）</td><td>-</td><td>ISO 23702-1</td><td>1項目まで¥19,800／2項目以上¥26,400</td><td>10g</td></tr>
       </tbody>
     </table>
   </div>
-  <div class="cms-note blue">管理画面の「テーブル」ブロックから行・列を追加。料金改訂時はここを更新。</div>
+  <div class="cms-note blue">クライアント提供Excel「項目一覧.xlsx」有害物質シートの全項目を反映。「-」はExcel側にJIS規格の記載がない項目（多くはISOのみ規定）。項目追加時は管理画面のテーブル機能で行を追加するだけで対応可能。</div>
 </div>
 
-<!-- ⑤ パーツ > 本文のみ（ご依頼にあたって） -->
+<!-- ⑥ パーツ > 本文のみ（評価基準） -->
 <div class="cms-block">
-  <span class="cms-label">⑤ パーツ &gt; 本文のみ（ご依頼にあたって）</span>
+  <span class="cms-label">⑥ パーツ &gt; 本文のみ（評価基準）</span>
+  <div class="lensa-text-block">
+    <div class="lensa-sec-ttl">評価基準</div>
+    <p>各物質の規制基準値・判定方法の詳細は、試験項目決定後に追加します。</p>
+  </div>
+  <div class="cms-note blue">【仮テキスト】boken.or.jp同様、評価基準の参照先（規格表等）をここに掲載する想定。</div>
+</div>
+
+<!-- ⑦ パーツ > 本文のみ（ご依頼にあたって） -->
+<div class="cms-block">
+  <span class="cms-label">⑦ パーツ &gt; 本文のみ（ご依頼にあたって）</span>
   <div class="lensa-text-block">
     <p>試験のご依頼にあたっては、試料量や分析方法の詳細についてご不明な点がある場合は、事前にお問い合わせください。規制への対応状況についてもお気軽にご相談ください。</p>
   </div>
   <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ⑥ パーツ > 重要なお知らせ（CTA） -->
+<!-- ⑧ パーツ > 重要なお知らせ（CTA） -->
 <div class="cms-block">
-  <span class="cms-label">⑥ パーツ &gt; 重要なお知らせ（CTA）</span>
+  <span class="cms-label">⑧ パーツ &gt; 重要なお知らせ（CTA）</span>
   <div class="lensa-notice">
     <div class="lensa-notice-text">分析依頼・お見積のご相談はお気軽にお問い合わせください</div>
     <a class="lensa-notice-btn" href="request-flow.html">分析依頼の流れを確認する</a>
@@ -100,30 +144,31 @@
   <div class="cms-note blue">テキスト・ボタンラベル・リンク先は管理画面から変更可。</div>
 </div>
 
-<!-- ⑦ フッター（共通） -->
+<!-- ⑨ フッター（共通） -->
 <div class="cms-block shared">
-  <span class="cms-label shared">⑦ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <span class="cms-label shared">⑨ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
   <div class="lensa-footer">
     <div class="lensa-footer-grid">
       <div class="lensa-footer-col">
-        <h4>試験・分析サービス</h4>
-        <a href="leather-analysis-cms.html">皮革品質分析</a>
-        <a href="collagen.html">コラーゲン定量</a>
-        <a href="ecoleather.html">エコレザー認証検査</a>
-        <a href="peptide.html">ペプチドシークエンス</a>
-        <a href="synthetic.html">人工素材</a>
+        <h4>皮革関連分析</h4>
+        <a href="leather-physics.html">物性試験</a>
+        <a href="leather-colorfall.html">染色堅ろう度試験</a>
+        <a href="leather-waterproof.html">防水試験</a>
+        <a href="leather-chemistry.html">化学試験</a>
+        <a href="leather-others.html">動物種判別試験</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>その他の分析</h4>
+        <a href="collagen.html">コラーゲン・食品関連分析</a>
+        <a href="ecoleather.html">エコレザー認証試験</a>
+        <a href="peptide.html">N末端ペプチドシークエンス</a>
+        <a href="test-products.html">試薬製品</a>
       </div>
       <div class="lensa-footer-col">
         <h4>ご依頼について</h4>
         <a href="request-flow.html">分析依頼の流れ</a>
         <a href="faq.html">よくあるご質問</a>
         <a href="contact.html">お問い合わせ</a>
-      </div>
-      <div class="lensa-footer-col">
-        <h4>研究活動</h4>
-        <a href="research-report.html">研究事業レポート</a>
-        <a href="donation.html">寄付・協力</a>
-        <a href="quality.html">品質管理</a>
       </div>
       <div class="lensa-footer-col">
         <h4>財団について</h4>
@@ -138,7 +183,7 @@
       © 一般財団法人 日本皮革研究所
     </div>
   </div>
-  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。</div>
+  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。フッターの大項目もナビと同様に5カテゴリ構成へ再編。</div>
 </div>
 
 </div><!-- .wrap -->

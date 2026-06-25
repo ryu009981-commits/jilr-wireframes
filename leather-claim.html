@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WF: 動物種判別試験（テンプレート展開版）｜ 日本皮革研究所</title>
+<title>WF: クレーム品・事故品の原因分析（新規ページ）｜ 日本皮革研究所</title>
 <link rel="stylesheet" href="wireframe.css">
 <link rel="stylesheet" href="lensa.css">
 </head>
 <body>
 <script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
 
-<div class="pg-label">WF: 動物種判別試験（テンプレート展開版 / boken.or.jp形式）</div>
+<div class="pg-label">WF: クレーム品・事故品の原因分析（新規ページ / boken.or.jp形式）</div>
 <div class="wrap">
 
 <!-- 凡例 -->
@@ -18,6 +18,10 @@
   <strong>LENSAhub ブロック凡例：</strong>
   <span class="legend-item"><span class="legend-dot orange"></span>共通パーツ（全ページ反映）</span>
   <span class="legend-item"><span class="legend-dot blue"></span>ページ固有ブロック</span>
+</div>
+
+<div class="cms-note orange" style="margin:12px 28px;padding:10px 14px;font-size:11px;">
+【注】旧サイト・旧ワイヤーに対応ページが無いため新規作成。ファイル名は仮（leather-claim.html）。
 </div>
 
 <!-- ① ヘッダー > スタンダード（共通） -->
@@ -42,10 +46,10 @@
 <div class="cms-block">
   <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
   <div class="lensa-page-title">
-    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span><a href="leather-analysis-cms.html">皮革関連分析</a><span>›</span>動物種判別試験</div>
-    <div class="lensa-h1">動物種判別試験</div>
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span><a href="leather-analysis-cms.html">皮革関連分析</a><span>›</span>クレーム品・事故品の原因分析</div>
+    <div class="lensa-h1">クレーム品・事故品の原因分析</div>
   </div>
-  <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。「革の判別試験」とクライアントの呼称が揺れているため、正式名称を確認したい。</div>
+  <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。</div>
 </div>
 
 <!-- ③ パーツ > 本文のみ（目的） -->
@@ -53,9 +57,9 @@
   <span class="cms-label">③ パーツ &gt; 本文のみ（目的）</span>
   <div class="lensa-text-block">
     <div class="lensa-sec-ttl">目的</div>
-    <p>天然皮革の動物種（牛・豚・羊・ダチョウ等）を判別する試験です。電子顕微鏡による表面・断面構造の観察と、LC/MS/MSによるコラーゲンのアミノ酸配列解析の2種類の手法に対応しています。</p>
+    <p>皮革製品に生じた変色・変質・カビなどのトラブルについて、成分分析・元素分析などにより原因を調査します。クレーム対応や品質改善のための科学的根拠を提供します。</p>
   </div>
-  <div class="cms-note blue">【仮テキスト】試験概要パンフレットの記載をベースに作成。リッチテキストエディタで本文を編集。</div>
+  <div class="cms-note blue">【仮テキスト】既存ワイヤー（leather-others.html旧版）の記載を参考に作成。リッチテキストエディタで本文を編集。</div>
 </div>
 
 <!-- ④ パーツ > 本文と画像（試験方法） -->
@@ -66,7 +70,7 @@
     <div class="lensa-textimg">
       <div class="lensa-textimg-img">試験機器<br>写真</div>
       <div class="lensa-textimg-body">
-        <p>電子顕微鏡による判別では、革の断面及び表面を観察し、繊維構造や毛穴の形態から動物種を判別します。LC/MS/MSによる判別では、コラーゲンのアミノ酸配列の違いを利用して、より精密に動物種を同定します。</p>
+        <p>FT-IR（フーリエ変換赤外分光法）による成分分析、元素分析、カビ・物性に関する調査など、トラブルの内容に応じて適切な分析手法を選定します。カビ関連やその他物性等の調査については、内容に応じて個別にお見積りします。</p>
       </div>
     </div>
   </div>
@@ -80,39 +84,31 @@
     <div class="lensa-sec-ttl">試験項目・料金一覧</div>
     <table class="lensa-table">
       <thead>
-        <tr><th>試験項目</th><th>判別方法</th><th>料金（税別）</th><th>必要量</th></tr>
+        <tr><th>試験方法</th><th>料金（税別）</th><th>必要な試料量</th></tr>
       </thead>
       <tbody>
-        <tr><td>電子顕微鏡による判別</td><td>断面及び表面から動物種の判別を行う</td><td>¥12,000</td><td>10×10cm以上</td></tr>
-        <tr><td>LC/MS/MSによる判別</td><td>コラーゲンのアミノ酸配列の違いにより判別を行う</td><td>¥26,400</td><td>10×10cm以上</td></tr>
+        <tr><td>成分分析（FT-IR）</td><td>¥22,000</td><td>-</td></tr>
+        <tr><td>元素分析</td><td>¥12,000</td><td>-</td></tr>
+        <tr><td>カビ関連</td><td>お問合せください</td><td>-</td></tr>
+        <tr><td>その他物性等</td><td>お問合せください</td><td>-</td></tr>
       </tbody>
     </table>
   </div>
-  <div class="cms-note blue">クライアント提供Excel「項目一覧.xlsx」動物種判別試験シートの全項目（2項目）を反映。項目追加時は管理画面のテーブル機能で行を追加するだけで対応可能。</div>
+  <div class="cms-note blue">クライアント提供Excel「項目一覧.xlsx」クレーム品・事故品の原因分析シートの全項目を反映。項目追加時は管理画面のテーブル機能で行を追加するだけで対応可能。</div>
 </div>
 
-<!-- ⑥ パーツ > 本文のみ（評価基準） -->
+<!-- ⑥ パーツ > 本文のみ（ご依頼にあたって） -->
 <div class="cms-block">
-  <span class="cms-label">⑥ パーツ &gt; 本文のみ（評価基準）</span>
+  <span class="cms-label">⑥ パーツ &gt; 本文のみ（ご依頼にあたって）</span>
   <div class="lensa-text-block">
-    <div class="lensa-sec-ttl">評価基準</div>
-    <p>判別結果の判定基準・報告書の形式詳細は、試験項目決定後に追加します。</p>
-  </div>
-  <div class="cms-note blue">【仮テキスト】boken.or.jp同様、評価基準の参照先をここに掲載する想定。</div>
-</div>
-
-<!-- ⑦ パーツ > 本文のみ（ご依頼にあたって） -->
-<div class="cms-block">
-  <span class="cms-label">⑦ パーツ &gt; 本文のみ（ご依頼にあたって）</span>
-  <div class="lensa-text-block">
-    <p>試験のご依頼にあたっては、試料サイズや判別方法の詳細についてご不明な点がある場合は、事前にお問い合わせください。複数試験の同時依頼も可能です。</p>
+    <p>トラブルの内容（変色・変質・カビ等）や状況について、できるだけ詳しくお問い合わせ時にお知らせください。試料の現物確認が必要な場合があります。</p>
   </div>
   <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
 </div>
 
-<!-- ⑧ パーツ > 重要なお知らせ（CTA） -->
+<!-- ⑦ パーツ > 重要なお知らせ（CTA） -->
 <div class="cms-block">
-  <span class="cms-label">⑧ パーツ &gt; 重要なお知らせ（CTA）</span>
+  <span class="cms-label">⑦ パーツ &gt; 重要なお知らせ（CTA）</span>
   <div class="lensa-notice">
     <div class="lensa-notice-text">分析依頼・お見積のご相談はお気軽にお問い合わせください</div>
     <a class="lensa-notice-btn" href="request-flow.html">分析依頼の流れを確認する</a>
@@ -121,9 +117,9 @@
   <div class="cms-note blue">テキスト・ボタンラベル・リンク先は管理画面から変更可。</div>
 </div>
 
-<!-- ⑨ フッター（共通） -->
+<!-- ⑧ フッター（共通） -->
 <div class="cms-block shared">
-  <span class="cms-label shared">⑨ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <span class="cms-label shared">⑧ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
   <div class="lensa-footer">
     <div class="lensa-footer-grid">
       <div class="lensa-footer-col">
