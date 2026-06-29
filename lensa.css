@@ -263,8 +263,13 @@
 /* パーツ > 依頼書ダウンロード（利用規約同意チェック） */
 .lensa-agree-terms {
   background: #f5f5f5; border: 1px solid #ddd; padding: 14px 16px; font-size: 11px;
-  color: #555; line-height: 1.8; max-height: 110px; overflow-y: auto; margin-bottom: 14px;
+  color: #555; line-height: 1.8; max-height: 220px; overflow-y: auto; margin-bottom: 14px;
 }
+.lensa-agree-ol { margin: 10px 0 0; padding-left: 1.6em; }
+.lensa-agree-ol > li { margin-bottom: 8px; }
+.lensa-agree-ol-roman { margin: 6px 0; padding-left: 1.8em; }
+.lensa-agree-ol-roman > li { margin-bottom: 4px; }
+.lensa-agree-date { text-align: right; margin: 10px 0 0; }
 .lensa-agree-check {
   display: flex; align-items: center; gap: 6px; font-size: 12px; color: #333; margin-bottom: 16px;
 }
