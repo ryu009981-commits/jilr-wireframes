@@ -229,7 +229,7 @@
 .lensa-form-placeholder { font-size: 12px; color: #999; }
 .lensa-form-radio { display: flex; gap: 20px; flex-wrap: wrap; font-size: 12px; }
 .lensa-form-radio label { display: flex; align-items: center; gap: 4px; color: #444; }
-.lensa-form-file { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.lensa-form-file { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
 .lensa-form-file-note { font-size: 11px; color: #888; }
 .lensa-form-check {
   display: flex; align-items: center; gap: 6px; font-size: 12px; color: #444;
