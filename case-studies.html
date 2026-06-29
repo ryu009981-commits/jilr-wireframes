@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WF: 分析・相談事例（LENSAhub実装版）｜ 日本皮革研究所</title>
+<link rel="stylesheet" href="wireframe.css">
+<link rel="stylesheet" href="lensa.css">
+</head>
+<body>
+<script>if(sessionStorage.getItem("wf_auth")!=="1"){location.href="login.html"}</script>
+<div class="pg-label">WF: 分析・相談事例（LENSAhub実装版）</div>
+<div class="wrap">
+
+<!-- 凡例 -->
+<div class="legend">
+  <strong>LENSAhub ブロック凡例：</strong>
+  <span class="legend-item"><span class="legend-dot orange"></span>共通パーツ（全ページ反映）</span>
+  <span class="legend-item"><span class="legend-dot blue"></span>ページ固有ブロック</span>
+</div>
+
+<!-- ① ヘッダー（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">① ヘッダー &gt; スタンダード（共通パーツ / サイトパーツ管理で編集）</span>
+  <div class="lensa-header">
+    <div class="lensa-logo">一般財団法人<br>日本皮革研究所</div>
+    <nav class="lensa-gnav">
+      <a href="leather-analysis-cms.html">皮革関連分析</a>
+      <a href="collagen.html">コラーゲン・食品関連分析</a>
+      <a href="ecoleather.html">エコレザー認証試験</a>
+      <a href="peptide.html">N末端ペプチドシークエンス</a>
+      <a href="test-products.html">試薬製品</a>
+      <a href="request-flow.html">分析依頼の流れ</a>
+      <a href="foundation.html">財団概要</a>
+    </nav>
+  </div>
+  <div class="cms-note orange">全ページ共通。ナビ項目はサイトパーツ管理から一括編集。</div>
+</div>
+
+<!-- ② ページタイトル -->
+<div class="cms-block">
+  <span class="cms-label">② パーツ &gt; ページタイトル（H1 + パンくず自動生成）</span>
+  <div class="lensa-page-title">
+    <div class="lensa-bc"><a href="index.html">HOME</a><span>›</span>分析・相談事例</div>
+    <div class="lensa-h1">分析・相談事例</div>
+  </div>
+  <div class="cms-note blue">H1テキストはページ情報（ページタイトル欄）から自動反映。パンくずも自動生成。TOPページ「分析・相談事例」ブロックの「その他の分析・相談事例」リンク先として新設。</div>
+</div>
+
+<!-- ③ パーツ > 本文のみ（リード文） -->
+<div class="cms-block">
+  <span class="cms-label">③ パーツ &gt; 本文のみ（リード文）</span>
+  <div class="lensa-text-block">
+    <p>お客様からのご相談内容と分析・解決事例をご紹介します。</p>
+  </div>
+  <div class="cms-note blue">リッチテキストエディタで本文を編集。</div>
+</div>
+
+<!-- ④ パーツ > ストーリー型一覧（分析・相談事例カード） -->
+<div class="cms-block">
+  <span class="cms-label">④ パーツ &gt; ストーリー型一覧（.lensa-story-list）「事例カード」3件</span>
+  <div class="lensa-story-list">
+    <a class="lensa-story-card" href="#">
+      <div class="lensa-story-img">サムネイル画像</div>
+      <div class="lensa-story-body">
+        <div class="lensa-story-meta">
+          <span class="lensa-news-date">2026.1.14</span>
+          <span class="lensa-news-cat">皮革分析</span>
+        </div>
+        <div class="lensa-story-title">サンプルタイトルが入ります。サンプルタイトルが入ります。</div>
+        <div class="lensa-story-text">サンプルテキストが入ります。サンプルテキストが入ります。サンプルテキストが入ります。サンプルテキストが入ります。サンプルテキストが入ります。サンプルテキストが入ります。</div>
+      </div>
+    </a>
+    <a class="lensa-story-card" href="#">
+      <div class="lensa-story-img">サムネイル画像</div>
+      <div class="lensa-story-body">
+        <div class="lensa-story-meta">
+          <span class="lensa-news-date">2026.1.14</span>
+          <span class="lensa-news-cat">食品分析</span>
+        </div>
+        <div class="lensa-story-title">サンプルタイトルが入ります。サンプルタイトルが入ります。</div>
+        <div class="lensa-story-text">サンプルテキストが入ります。サンプルテキストが入ります。サンプルテキストが入ります。サンプルテキストが入ります。サンプルテキストが入ります。サンプルテキストが入ります。</div>
+      </div>
+    </a>
+    <a class="lensa-story-card" href="#">
+      <div class="lensa-story-img">サムネイル画像</div>
+      <div class="lensa-story-body">
+        <div class="lensa-story-meta">
+          <span class="lensa-news-date">2026.1.14</span>
+          <span class="lensa-news-cat red">財団紹介</span>
+        </div>
+        <div class="lensa-story-title">サンプルタイトルが入ります。サンプルタイトルが入ります。</div>
+        <div class="lensa-story-text">サンプルテキストが入ります。サンプルテキストが入ります。サンプルテキストが入ります。サンプルテキストが入ります。サンプルテキストが入ります。サンプルテキストが入ります。</div>
+      </div>
+    </a>
+  </div>
+  <div class="cms-note blue">レイアウトはsnd-net.co.jp/story/のLENSAhub実装（画像を上部に全幅配置し、タイトル・本文を縦に積むストーリー型カード）を参考に、本プロジェクトの`.lensa-story-card`構成で再現。日付・カテゴリタグは既存の`.lensa-news-date`/`.lensa-news-cat`を流用。TOPページの「分析・相談事例」セクション（3件抜粋表示）から「その他の分析・相談事例」リンクで本ページへ遷移し、全件を一覧表示する想定。事例の内容・件数は未確定のためダミーテキストで仮実装。カードクリックで個別記事ページ（CMSの記事詳細）へ遷移。新規事例追加時はCMSの記事管理から追加。</div>
+</div>
+
+<!-- ⑤ パーツ > 本文のみ（ページネーション） -->
+<div class="cms-block">
+  <span class="cms-label">⑤ パーツ &gt; 本文のみ（ページネーション）</span>
+  <div class="lensa-text-block">
+    <div class="lensa-pager">
+      <span class="on">1</span>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">次へ ›</a>
+    </div>
+  </div>
+  <div class="cms-note blue">事例件数が増えた場合のページネーション。CMS記事管理の表示件数設定に準拠。</div>
+</div>
+
+<!-- ⑥ フッター（共通） -->
+<div class="cms-block shared">
+  <span class="cms-label shared">⑥ フッター（共通パーツ / サイトパーツ管理で編集・全ページ反映）</span>
+  <div class="lensa-footer">
+    <div class="lensa-footer-grid">
+      <div class="lensa-footer-col">
+        <h4>皮革関連分析</h4>
+        <a href="leather-physics.html">物性試験</a>
+        <a href="leather-colorfall.html">染色堅ろう度試験</a>
+        <a href="leather-waterproof.html">防水試験</a>
+        <a href="leather-chemistry.html">化学試験</a>
+        <a href="leather-others.html">動物種判別試験</a>
+        <a href="leather-claim.html">クレーム品・事故品の原因分析</a>
+        <a href="leather-other-analyses.html">有害物質試験</a>
+        <a href="leather-vehicle.html">車両関連試験</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>その他の分析</h4>
+        <a href="collagen.html">コラーゲン・食品関連分析</a>
+        <a href="ecoleather.html">エコレザー認証試験</a>
+        <a href="peptide.html">N末端ペプチドシークエンス</a>
+        <a href="test-products.html">試薬製品</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>ご依頼について</h4>
+        <a href="request-flow.html">分析依頼の流れ</a>
+        <a href="faq.html">よくあるご質問</a>
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>研究活動</h4>
+        <a href="research-report.html">研究事業レポート</a>
+        <a href="case-studies.html">分析・相談事例</a>
+        <a href="donation.html">寄付・協力</a>
+        <a href="quality.html">品質管理</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>財団について</h4>
+        <a href="foundation.html">財団概要</a>
+        <a href="foundation-business.html">事業内容</a>
+        <a href="foundation-org.html">組織概要</a>
+        <a href="foundation-report.html">事業報告</a>
+        <a href="foundation-access.html">アクセス</a>
+        <a href="foundation-links.html">関連リンク</a>
+        <a href="foundation-sustainability.html">サスティナビリティ</a>
+      </div>
+      <div class="lensa-footer-col">
+        <h4>その他</h4>
+        <a href="news.html">お知らせ一覧</a>
+        <a href="sitemap.html">サイトマップ</a>
+        <a href="policy.html">サイトポリシー</a>
+        <a href="privacy.html">個人情報取扱方針</a>
+      </div>
+    </div>
+    <div class="lensa-footer-btm">
+      〒120-8601 東京都…（東京事務所）／〒302-0017 茨城県…（茨城研究施設）　TEL: 03-3888-5139（東京）<br>
+      © 一般財団法人 日本皮革研究所
+    </div>
+  </div>
+  <div class="cms-note orange">住所・電話番号・リンクはサイトパーツ管理から編集。フッターは現行ワイヤー全ページ（6カテゴリ・33ページ）の最新サイトマップに合わせて再編。底革・人工素材は未確定ページのため掲載せず。</div>
+</div>
+
+</div><!-- .wrap -->
+</body>
+</html>
